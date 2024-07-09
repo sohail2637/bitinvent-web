@@ -16,7 +16,7 @@ export default function BlogSection() {
                    
                 </div>
             </section>
-            <BlogSearch/>
+            <BlogSearch width="md:w-[46%] w-full"/>
             <BlogCards/>
     </>
   )

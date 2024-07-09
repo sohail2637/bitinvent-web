@@ -1,26 +1,12 @@
 import React from 'react'
 
-export default function BlogSearch() {
+export default function BlogSearch({width}) {
   return (
    <>
-   {/* <section>
-<div className='flex justify-center items-center m-14'>
-    <div className='flex  flex-col h-[150px] w-[45%] bg-[#F1F1F1] text-center'>
-        <p className='font-medium leading-6 text-[20px] text-[#034E70] m-5 '>Join us for our updates and news</p>
-        <div className='flex justify-between items-center'>
-            <div className='w-32'>
-            <input type="text" placeholder='Your Email' />
-
-            </div>
-            <button className='bg-[#034e70] '>SUBSCRIBE</button>
-        </div>
-    </div>
-</div>
-
-   </section> */}
+ 
    <section>
-     <div className="flex justify-center items-center mt-16 md:mt-0 md:p-14 ">
-      <div className="bg-[#F1F1F1] p-6 md:w-[46%] w-full">
+     <div className="flex justify-center items-center max-w-7xl mt-16 md:mt-0 md:p-14 ml-auto mr-auto ">
+      <div className={`bg-[#F1F1F1] p-6 ${width}`}>
         <h2 className="text-center text-[20px] leading-6 font-normal text-[#034E70] md:m-4 m-2">
           Join us for our updates and news
         </h2>

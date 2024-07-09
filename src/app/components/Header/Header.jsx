@@ -45,7 +45,7 @@ const Header = () => {
               </div>
             )}
           </div>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href='/tech-stack' className="hover:border-b-2 border-[#3a3a3a]">
             TECH STACK
           </a>
           <a href="#" className="hover:border-b-2 border-[#3a3a3a]">

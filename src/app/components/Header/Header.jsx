@@ -31,7 +31,7 @@ const Header = () => {
             HOME
           </a>
           <div className="relative" onMouseEnter={() => setServicesDropdown(true)} onMouseLeave={() => setServicesDropdown(false)}>
-            <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+            <a href="/service-update" className="hover:border-b-2 border-[#3a3a3a]">
               SERVICES
             </a>
             {servicesDropdown && (
@@ -45,19 +45,19 @@ const Header = () => {
               </div>
             )}
           </div>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href='/tech-stack' className="hover:border-b-2 border-[#3a3a3a]">
             TECH STACK
           </a>
           <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
             CLIENTS AND CASES
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href="/aboutUs" className="hover:border-b-2 border-[#3a3a3a]">
             ABOUT US
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href="/contact" className="hover:border-b-2 border-[#3a3a3a]">
             CONTACT
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href="/blog" className="hover:border-b-2 border-[#3a3a3a]">
             BLOG
           </a>
           <div className="relative" onMouseEnter={() => setLanguageDropdown(true)} onMouseLeave={() => setLanguageDropdown(false)}>

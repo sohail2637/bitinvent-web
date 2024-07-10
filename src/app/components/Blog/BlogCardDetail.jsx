@@ -27,12 +27,12 @@ export default function BlogCardDetail({ cardsData }) {
           {filteredCards.map((card, index) => (
             <div key={index} className="md:p-4 p-2 bg-white flex justify-center items-center flex-col">
               <h2 className="text-[#034E70] text-[27.2px] font-normal md:p-6 text-center mb-3">{card.heading}</h2>
-              <div className="relative w-full md:h-[500px] h-[200px]">
+              <div className="relative w-full md:h-[700px] h-[200px] mb-8">
                 <Image src={card.image} layout="fill" objectFit="cover" />
               </div>
               <div
                 dangerouslySetInnerHTML={{ __html: card.details }}
-                className="prose w-full md:w-9/10 lg:w-[70%] text-left md:p-6 p-0 leading-[34px]"
+                className="prose w-full md:w-9/10 lg:w-[70%] text-left md:p-6 p-0  leading-[34px]"
               />
               <BlogSearch width="w-full" />
             </div>

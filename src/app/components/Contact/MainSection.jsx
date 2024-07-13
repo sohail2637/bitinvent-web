@@ -9,7 +9,7 @@ export default function MainSection() {
       position: 'Director Sales',
       location: 'Head Office DK',
       phone: '+45 31 32 33 40',
-      email: 'gufran@teo.dk',
+      email: 'gufran@bitInvent.dk',
       img: '/assets/images/Gufran-img.jpg'
     },
     {
@@ -17,7 +17,7 @@ export default function MainSection() {
       position: 'Sales Associate',
       location: 'Head Office DK',
       phone: '+45 40 11 33 40',
-      email: 'tahir@teo.dk',
+      email: 'tahir@bitInvent.dk',
       img: '/assets/images/tahir-img.jpeg'
     },
     {
@@ -25,7 +25,7 @@ export default function MainSection() {
       position: 'Sales Advisor',
       location: 'Office Norway',
       phone: '+47 98 00 60 62',
-      email: 'hamza@teonorge.no',
+      email: 'hamza@bitInventnorge.no',
       img: '/assets/images/hamza-img.jpeg'
     }
   ]
@@ -60,8 +60,8 @@ export default function MainSection() {
           <div className='w-full md:w-[25%] m-4'>
             <div className='text-xl font-thin leading-8' >
               <p className='mb-7 '>Feel free to contact us if you have any questions or comments.</p>
-              <p className='mb-7 '>Call us on <br /><strong className='text-[#034E70] font-normal'>+45 70 20 21 49</strong></p>
-              <p className='mb-7 '>Or write us an email to<br /><strong className='text-[#034E70] font-normal'>info@teo.dk</strong></p>
+              <p className='mb-7 '>Call us on <br /><strong className='text-[#034E70] font-normal'>+92 305 5534249</strong></p>
+              <p className='mb-7 '>Or write us an email to<br /><strong className='text-[#034E70] font-normal'>info@bitInvent.dk</strong></p>
               <button className='cursor-pointer bg-[#EF6461] text-white text-[20px] h-[50px] w-[200px] rounded-[5px] '>How can we help?</button>
             </div>
 

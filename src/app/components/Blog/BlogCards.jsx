@@ -72,9 +72,12 @@ export default function BlogCards() {
             {data.detail}
           </p>
         </div>
+        <Link href={`/blog/${data.heading}`}>
         <div className="px-5 py-3">
           <a href="#" className="text-[#000BEC] text-[12px]">Read More</a>
         </div>
+        </Link> 
+
       </div>
     ))}
   </div>

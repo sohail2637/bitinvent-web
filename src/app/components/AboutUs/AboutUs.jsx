@@ -25,11 +25,11 @@ export default function AboutUs() {
          
           <div className="text-[20px] font-[300] leading-8 flex  flex-col gap-8 text-[#3a3a3a]   ">
             <span>
-            TEO A/S was founded in 2007 in Copenhagen with Syddansk Kapital as co-owner.
-             The aim was to be a flexible, competitive and scalable extension of the customers’
-              internal development department (the Core+ model). At the head of TEO is Zahid 
-              Abdullah, who founded the company and who has engineering and commercial education
-               from DTU and roots from Pakistan.
+            BitInvent A/S was established in 2019 with a vision to operate as a flexible, 
+            competitive, and scalable extension of customers' internal development departments,
+             following the Core+ model. Leading BitInvent is Sohail Maqsood, the company's 
+             founder, equipped with engineering and commercial education from DTU and roots
+              originating from Pakistan.
             </span>
             <h3 className='text-[#034E70] text-[23px] '>
             Reliable Software Engineers

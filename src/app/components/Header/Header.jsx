@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex w-full items-center justify-between lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -48,9 +48,9 @@ const Header = () => {
           <a href='/tech-stack' className="hover:border-b-2 border-[#3a3a3a]">
             TECH STACK
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          {/* <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
             CLIENTS AND CASES
-          </a>
+          </a> */}
           <a href="/aboutUs" className="hover:border-b-2 border-[#3a3a3a]">
             ABOUT US
           </a>
@@ -125,11 +125,11 @@ const Header = () => {
             )}
           </div>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">TECH STACK</a>
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CLIENTS AND CASES</a>
+          {/* <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CLIENTS AND CASES</a> */}
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">ABOUT US</a>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CONTACT</a>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">BLOG</a>
-          <div className="relative w-full text-center">
+          {/* <div className="relative w-full text-center">
             <button
               onClick={() => setDrawerLanguageDropdown(!drawerLanguageDropdown)}
               className="w-full block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 focus:outline-none"
@@ -143,7 +143,7 @@ const Header = () => {
                 <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">NORSK</a>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

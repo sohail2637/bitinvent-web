@@ -105,7 +105,7 @@ const Footer = () => {
             
               <ul role="list" className="mt-6 ">
               <li className="text-[17px] font-[300]  text-white">
-              TEO A/S
+              BitInvent A/S
                 </li>
                 <li className="text-[17px] font-[300]  text-white">
                   Njalsgade 76,
@@ -114,10 +114,10 @@ const Footer = () => {
                    2300 KBH S, Denmark
                 </li>
                 <li className="text-[17px] font-[400]  text-white">
-                  info@teo.dk
+                  info@bitInvent.dk
                 </li>
                 <li className="text-[17px] font-[300]  text-white">
-                  +45 7020 2149
+                +92 305 5534249
                 </li>
                 <li className="text-[17px] font-[300]  text-white">
                   CVR 2924 0442
@@ -130,10 +130,10 @@ const Footer = () => {
                 role="list"
                 className="mt-6  text-[17px] font-[300] leading-6 text-white"
               >
-                <li>TEO (Pvt.) Ltd.</li>
-                <li>Hassan Arcade, F-11 Markaz, 44000 Islamabad,</li>
+                <li>BitInvent (Pvt.) Ltd.</li>
+                <li>Hassan Arcade, F-11 Markaz, 33000 Faisalabad,</li>
                 <li> Pakistan</li>
-                <li>A subsidiary of TEO Denmark</li>
+                <li>A subsidiary of bitInvent Denmark</li>
               </ul>
             </div>
           </div>
@@ -141,7 +141,7 @@ const Footer = () => {
 <div className="w-full mb-6 sm:mb-0 ">
             <a href="/privacy-policy " className="text-[17px]">Privacy Policy  |</a>
             <a href="#" className="text-[17px]">Cookie Policy  | </a>
-            <a href="#" className="text-[17px]"> Copyright © TEO A/S 2023</a>
+            <a href="#" className="text-[17px]"> Copyright © bitInvent A/S 2023</a>
           </div>
 </div>
           

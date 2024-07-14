@@ -5,28 +5,30 @@ export default function ServicesCard() {
     const topCardSection = [
         {
             heading: 'Software Development',
-            detail: 'At TEO, we’re convinced that integrating IT into your business strategy isn’t just a good idea—it’s essential for growth and revenue.',
-        }, {
+            detail: 'At BitInvent, we firmly believe that embedding IT into your business strategy is not just beneficial—its crucial for achieving growth and increasing revenue.' 
+        },
+            {
             heading: 'Embedded Systems',
-            detail: 'TEO is your go-to expert in disruptive innovations, specializing in crafting firmware and software solutions for a variety of embedded systems across industries.',
-        }, {
+            detail: 'BitInvent specializes in creating advanced firmware and software solutions for diverse embedded systems across industries, focusing on disruptive innovations.'
+         },
+         {
             heading: 'Software Testing | Quality Assurance',
-            detail: 'In today’s fast-paced and dynamic digital landscape, ensuring the quality and reliability of software applications is paramount.',
+            detail: "In today's rapidly evolving digital landscape, ensuring the quality and reliability of software applications is crucial."
         },
     ]
 
     const bottomCardSection = [
         {
             heading: 'Project Management',
-            detail: 'Step into the realm of Project Management, a dynamic space where strategy meets execution. As a vital contributor to our team, navigate a landscape that involves planning and overseeing projects.',
+            detail: 'Step into Project Management, where strategic planning meets efficient execution in a dynamic environment. Contribute expertise and dedication to navigating project planning and oversight.'
         },
         {
             heading: 'Data and AI',
-            detail: 'In today’s dynamic business landscape, data is a strategic asset, and TEO is here to empower your organisation with innovative AI solutions.',
+            detail: "In today's ever-changing business environment, data stands as a strategic asset, and BitInvent is dedicated to empowering your organization with cutting-edge AI solutions."
         },
         {
             heading: 'UI/UX Design Services',
-            detail: 'In the digital era, where the user is king, creating an outstanding User Interface (UI) and User Experience (UX) is paramount for the success of any digital product or service.',
+            detail: "In today's digital era, where user experience reigns supreme, crafting exceptional User Interface (UI) and User Experience (UX) is pivotal for the success of every digital product and service."
         },
     ]
     return (
@@ -79,13 +81,11 @@ export default function ServicesCard() {
                         <div className=' bg-[#004f70] text-white xl:w-[300px] lg:w-[230px] xl:h-[450px] lg:h-[550px] md:p-8 p-5 lg:mt-0  mt-5 rounded-lg mb-32'>
                             <div className=''>
                                 <h1 className='text-[20.8px] font-normal mb-4'>Let's talk</h1>
-                                <p className='text-[16px] font-light leading-7 mb-4'>TEO enhances your systems, creating complete software solutions,
+                                <p className='text-[16px] font-light leading-7 mb-4'>BitInvent enhances your systems, creating complete software solutions,
                                     including IoT firmware and apps -an effective extension to your IT department.
-                                    
                                     </p>
                                     <p>
-
-                                    info@teo.dk <br />+45 7020 2149
+                                    info@bitInvent.dk <br />+92 305 5534249
                                     </p>
                         
                             </div>

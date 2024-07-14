@@ -67,7 +67,7 @@ export const cardsData = [
 Key milestones include the development of:</p>
         `
     },
-     
+
     {
         heading: "5 Tips to Boost Your Developer Career in 2024",
         image: "/assets/images/meeting.jpg", // Replace with actual image path
@@ -133,6 +133,6 @@ Key milestones include the development of:</p>
        </p> 
         `
     }
-    
+
 
 ];

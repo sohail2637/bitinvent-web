@@ -108,17 +108,15 @@ const Home = () => {
       />
     </motion.div>
 
-    <motion.div className="w-[90%] px-1 md:w-[40%] flex flex-col gap-8" variants={itemVariants}>
+    <motion.div className="w-[90%] px-1 md:w-[40%] flex flex-col gap-7" variants={itemVariants}>
       <p className="text-[25px] font-[400] leading-10">
-        TEO - builders of software and IoT solutions
+      BitInvent-Innovating Software and IoT Solutions for Your Needs
       </p>
       <div className="text-[20px] font-[300] leading-7 flex flex-col gap-8 text-[#3a3a3a]">
         <motion.span variants={itemVariants}>
-          TEO is an experienced software and IoT solutions company with 17 years of experience and a portfolio of 100+ Danish and international clients. We are praised for our technical prowess, communication, and project management. We offer innovative IT solutions at competitive prices and can agilely handle projects of all sizes.
-        </motion.span>
+        BitInvent is a seasoned software and IoT solutions company with five years of experience, boasting a portfolio of over 100 Danish and international clients. Renowned for our technical expertise, effective communication, and exceptional project management, we deliver innovative IT solutions at competitive prices. Our agile approach allows us to handle projects of all sizes efficiently.        </motion.span>
         <motion.span variants={itemVariants}>
-          With an average customer retention of six years, our business concept combines Copenhagen for management and customer care with software development by our 170+ engineers in Islamabad, Pakistan.
-        </motion.span>
+        With an average customer retention rate of five years, our business model blends management and customer care from Copenhagen with software development by our team of 170+ engineers based in Faisalabad, Pakistan.        </motion.span>
       </div>
     </motion.div>
   </motion.div>
@@ -132,7 +130,7 @@ const Home = () => {
       animate="visible"
       variants={itemVariants}
     >
-      TEO SERVICES
+      BITINVENT SERVICES
     </motion.div>
   
     <motion.div

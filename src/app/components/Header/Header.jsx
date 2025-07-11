@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex w-full items-center justify-between lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -31,12 +31,12 @@ const Header = () => {
             HOME
           </a>
           <div className="relative" onMouseEnter={() => setServicesDropdown(true)} onMouseLeave={() => setServicesDropdown(false)}>
-            <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+            <a href="/service-update" className="hover:border-b-2 border-[#3a3a3a]">
               SERVICES
             </a>
             {servicesDropdown && (
               <div className="absolute left-0 z-10 w-[200px] bg-white shadow-md">
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SOFTWARE DEVELOPMENT</a>
+                <a href="/software-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SOFTWARE DEVELOPMENT</a>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">EMBEDDED SYSTEMS</a>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SOFTWARE TESTING & QUALITY ASSURANCE</a>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">PROJECT MANAGEMENT</a>
@@ -45,22 +45,22 @@ const Header = () => {
               </div>
             )}
           </div>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href='/tech-stack' className="hover:border-b-2 border-[#3a3a3a]">
             TECH STACK
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          {/* <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
             CLIENTS AND CASES
-          </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          </a> */}
+          <a href="/aboutUs" className="hover:border-b-2 border-[#3a3a3a]">
             ABOUT US
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href="/contact" className="hover:border-b-2 border-[#3a3a3a]">
             CONTACT
           </a>
-          <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
+          <a href="/blog" className="hover:border-b-2 border-[#3a3a3a]">
             BLOG
           </a>
-          <div className="relative" onMouseEnter={() => setLanguageDropdown(true)} onMouseLeave={() => setLanguageDropdown(false)}>
+          {/* <div className="relative" onMouseEnter={() => setLanguageDropdown(true)} onMouseLeave={() => setLanguageDropdown(false)}>
             <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
               ENGLISH
             </a>
@@ -71,7 +71,7 @@ const Header = () => {
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">NORSK</a>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
 
         {/* Hamburger Menu */}
@@ -115,7 +115,7 @@ const Header = () => {
             </button>
             {drawerServicesDropdown && (
               <div className="flex flex-col items-center">
-                <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">SOFTWARE DEVELOPMENT</a>
+                <a href="/software-development" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">SOFTWARE DEVELOPMENT</a>
                 <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">EMBEDDED SYSTEMS</a>
                 <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">SOFTWARE TESTING & QUALITY ASSURANCE</a>
                 <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">PROJECT MANAGEMENT</a>
@@ -125,11 +125,11 @@ const Header = () => {
             )}
           </div>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">TECH STACK</a>
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CLIENTS AND CASES</a>
+          {/* <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CLIENTS AND CASES</a> */}
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">ABOUT US</a>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CONTACT</a>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">BLOG</a>
-          <div className="relative w-full text-center">
+          {/* <div className="relative w-full text-center">
             <button
               onClick={() => setDrawerLanguageDropdown(!drawerLanguageDropdown)}
               className="w-full block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 focus:outline-none"
@@ -143,7 +143,7 @@ const Header = () => {
                 <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-200">NORSK</a>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

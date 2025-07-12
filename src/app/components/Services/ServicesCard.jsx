@@ -41,7 +41,7 @@ export default function ServicesCard() {
                                 <div className='flex justify-between items-start flex-col bg-[#F8F8F8] md:w-1/3 xl:h-[350px] lg:h-[400px] md:h-[450px] lg:p-9 md:p-6 p-4 rounded-lg md:mb-0 mb-6'>
                                     <div className=''>
                                         <h1 className='text-[20.8px] font-normal text-[#034E70] mb-4'>{data.heading}</h1>
-                                        <p className='text-[17.6px] font-light leading-8  '>{data.detail}</p>
+                                        <p className='text-[17.6px] font-light md:leading-8 leading-6  '>{data.detail}</p>
 
                                     </div>
                                     <div className='mt-5 mb-5'>
@@ -64,7 +64,7 @@ export default function ServicesCard() {
                                  flex-col bg-[#F8F8F8] xl:w-[300px] lg:w-[230px] xl:h-[450px] lg:h-[550px] md:h-auto xl:p-9 lg:p-6 p-4 mt-6 md:mt-0 rounded-lg'>
                                         <div className=''>
                                             <h1 className='text-[20.8px] font-normal text-[#034E70] mb-4'>{data.heading}</h1>
-                                            <p className='text-[18px] font-light leading-8 mb-6 '>{data.detail}</p>
+                                            <p className='text-[18px] font-light md:leading-8 leading-6 mb-6 '>{data.detail}</p>
                                             <button className='bg-[#F8F8F8] text-[16px] font-medium text-[#034E70] hover:text-white
                      hover:bg-[#034E70] h-[55px] border-[#034E70] border-[3px] rounded-md
                      w-[150px] '>Learn More</button>

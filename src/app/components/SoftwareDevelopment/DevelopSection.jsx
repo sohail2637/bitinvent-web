@@ -9,7 +9,7 @@ export default function DevelopSection() {
    <>
        <section>
                 <div
-                    className=" flex justify-between items-center md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[520px] h-[250px] w-screen"
+                    className=" flex justify-between items-center md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[520px] h-[250px]"
                     style={{ backgroundImage: "url('/assets/images/software-dev.png')" }}
                 >
                     <div className=' md:mx-24 p-4 md:px-11 md:my-9'>

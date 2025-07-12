@@ -22,15 +22,15 @@ const cardsData = [
 const ValueForBusiness = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center bg-[#ecf5fd] w-full mt-20 p-3 md:p-8 min-h-[350px]">
+      <div className="flex flex-col justify-center items-center bg-[#ecf5fd] w-full  p-3 py-4 md:p-8 min-h-[350px]">
         <h1 className="text-[19px] font-[400] leading-6 mb-4 text-[#02283a] text-center">
           VALUE FOR YOUR BUSINESS
         </h1>
-        <div className="w-[90%] gap-2 m-auto flex flex-col md:flex-row">
+        <div className="w-[90%] gap-5 m-auto flex flex-col md:flex-row">
             {cardsData?.map((card , i)=>{
                 return(
-          <div key={i} className="w-full md:w-[10%] flex-1 p-4 ">
-            <h2 className=" text-[19px] font-[400] leading-6 mb-2 text-[#034e70]">{card.heading}</h2>
+          <div key={i} className="w-full md:w-[10%] flex-1 md:p-4 p-0 ">
+            <h2 className=" text-[19px] font-[400] leading-6 md:mb-2 mb-0 text-[#034e70]">{card.heading}</h2>
             <p className="text-[16px] font-[300] leading-6 text-[#5d7785]">{card.para}</p>
           </div>
                 )   

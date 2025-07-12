@@ -72,83 +72,71 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#02283a] text-white w-full px-6 py-9">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-20 flex flex-col">
-        <div className="md:flex flex-col flex-wrap justify-between items-center max-w-screen-lg mr-auto ml-auto ">
-         
-
-          <div className="md:flex justify-around items-start ">
-            <div className="w-[50%] lg:w-[25.22%] mb-6 sm:mb-0 text-left leading-7 md:p-8">
-              <ul className="">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:underline text-[16px] font-[300] leading-6 text-white "
-                  >
-                    MEMBER OF
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:underline text-[16px] font-[400] leading-6 text-white"
-                  >
-                    {" "}
-                    DI – Dansk Industri Innovere Group Pasha
-                  </a>
-                </li>
-             
-              </ul>
+    <footer className="bg-[#02283a] text-white w-full px-6 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-20">
+        <div className="max-w-screen-lg mx-auto flex flex-col">
+          {/* Main content */}
+          <div className="md:flex justify-between items-start space-y-8 md:space-y-0">
+            {/* Member section */}
+            <div className="md:w-1/4 space-y-4">
+              <h3 className="text-lg font-semibold tracking-wider">MEMBER OF</h3>
+              <p className="text-white/90 hover:text-white transition-colors">
+                DI – Dansk Industri Innovere Group Pasha
+              </p>
             </div>
 
-            <div className="mt-10 md:mt-0 leading-7">
-            
-              <ul role="list" className="mt-6 ">
-              <li className="text-[17px] font-[300]  text-white">
-              BitInvent A/S
-                </li>
-                <li className="text-[17px] font-[300]  text-white">
-                  Njalsgade 76,
-                </li>
-                <li className="text-[17px] font-[300]  text-white">
-                   2300 KBH S, Denmark
-                </li>
-                <li className="text-[17px] font-[400]  text-white">
+            {/* Denmark address */}
+            <div className="md:w-1/4 space-y-4">
+              <h3 className="text-lg font-semibold tracking-wider">DENMARK</h3>
+              <ul className="space-y-2 text-white/90">
+                <li>BitInvent A/S</li>
+                <li>Njalsgade 76,</li>
+                <li>2300 KBH S, Denmark</li>
+                <li className="font-medium hover:text-white transition-colors">
                   info@bitInvent.dk
                 </li>
-                <li className="text-[17px] font-[300]  text-white">
-                +92 305 5534249
-                </li>
-                <li className="text-[17px] font-[300]  text-white">
-                  CVR 2924 0442
-                </li>
+                <li>+92 305 5534249</li>
+                <li>CVR 2924 0442</li>
               </ul>
             </div>
 
-            <div className="w-full sm:w-1/2 lg:w-[25.22%] mb-6 sm:mb-0 text-left">
-              <ul
-                role="list"
-                className="mt-6  text-[17px] font-[300] leading-6 text-white"
-              >
+            {/* Pakistan address */}
+            <div className="md:w-1/4 space-y-4">
+              <h3 className="text-lg font-semibold tracking-wider">PAKISTAN</h3>
+              <ul className="space-y-2 text-white/90">
                 <li>BitInvent (Pvt.) Ltd.</li>
-                <li>Hassan Arcade, F-11 Markaz, 33000 Faisalabad,</li>
-                <li> Pakistan</li>
-                <li>A subsidiary of bitInvent Denmark</li>
+                <li>Hassan Arcade, F-11 Markaz,</li>
+                <li>33000 Faisalabad, Pakistan</li>
+                <li className="italic">A subsidiary of bitInvent Denmark</li>
               </ul>
             </div>
           </div>
-<div className="flex items-center justify-center pt-28 ">
-<div className="w-full mb-6 sm:mb-0 ">
-            <a href="/privacy-policy " className="text-[17px]">Privacy Policy  |</a>
-            <a href="#" className="text-[17px]">Cookie Policy  | </a>
-            <a href="#" className="text-[17px]"> Copyright © bitInvent A/S 2023</a>
+
+          {/* Divider */}
+          <div className="border-t border-white/20 my-8"></div>
+
+          {/* Bottom links */}
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex items-center space-x-4 text-sm">
+              <a href="/privacy-policy" className="hover:underline hover:text-white/100 transition-colors">
+                Privacy Policy
+              </a>
+              {/* <span>|</span>
+              <a href="#" className="hover:underline hover:text-white/100 transition-colors">
+                Cookie Policy
+              </a>
+              <span>|</span>
+              <a href="#" className="hover:underline hover:text-white/100 transition-colors">
+                Terms of Service
+              </a> */}
+            </div>
+            <div className="text-sm text-white/80">
+              Copyright © bitInvent A/S {new Date().getFullYear()}
+            </div>
           </div>
-</div>
-          
         </div>
       </div>
     </footer>
   );
 };
-
 export default Footer;

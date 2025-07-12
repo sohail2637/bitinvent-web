@@ -46,12 +46,12 @@ export default function ManagmentTeam() {
     <>
     <section>
         <div className='flex flex-col justify-center items-center  w-full mt-15 p-3 md:p-8 min-h-[450px] mr-auto ml-auto'>
-        <h2 className='text-center text-[24px] font-medium text-[#034E70] mb-6'>Management Team</h2>
+        <h2 className='text-center text-[24px] font-medium text-[#034E70] md:mb-6 mb-3'>Management Team</h2>
     <div className='md:flex justify-between items-start flex-wrap gap-2 md:mx-24 '>
   {
   managmentTeam.map((data) => {
     return (
-      <div className='w-full md:w-[29%]  mt-3 p-5 text-left h-fit ' style={{ fontFamily: 'Lato, sans-serif' }}>
+      <div className='w-full md:w-[29%]  mt-3 p-5 text-left flex flex-col items-center md:items-start h-fit ' style={{ fontFamily: 'Lato, sans-serif' }}>
         <div className='w-40 h-40 mb-9 '>
           <Image
             src={data.img}
@@ -65,7 +65,7 @@ export default function ManagmentTeam() {
         </div>
         <div className='text-xl leading-6 md:leading-8 font-normal '>
             <h3 className='text-[20px] font-normal text-[#034E70] leading-4 mb-5 '>{data.name}</h3>
-         <p className='text-[17px] md:text-[18px] font-light' > {data.detail}</p>
+         <p className='text-[17px] md:text-[18px] font-light md:leading-8 leading-6 ' > {data.detail}</p>
         </div>
       </div>
     );

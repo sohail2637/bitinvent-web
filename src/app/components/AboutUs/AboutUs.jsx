@@ -9,7 +9,7 @@ export default function AboutUs() {
   <>
   <FrontSection/>
   <section>
-  <div className="flex flex-wrap gap-8 items-start justify-center min-h-[500px] w-full py-20">
+  <div className="flex flex-wrap gap-8 items-start justify-center min-h-[500px] w-full md:py-20">
         <div className=" w-[90%] md:w-[39%]  flex justify-center">
           <Image
             src="/assets/images/teo-office.png"
@@ -23,18 +23,18 @@ export default function AboutUs() {
 
         <div className="w-[90%] px-1 md:w-[40%] flex flex-col gap-8 ">
          
-          <div className="text-[20px] font-[300] leading-8 flex  flex-col gap-8 text-[#3a3a3a]   ">
-            <span>
+          <div className=" flex  flex-col md:gap-8 gap-5 text-[#3a3a3a]   ">
+            <span className="md:text-[20px] text-[16px] leading-6 font-[300] md:leading-8">
             BitInvent A/S was established in 2019 with a vision to operate as a flexible, 
             competitive, and scalable extension of customers' internal development departments,
              following the Core+ model. Leading BitInvent is Sohail Maqsood, the company's 
              founder, equipped with engineering and commercial education from DTU and roots
               originating from Pakistan.
             </span>
-            <h3 className='text-[#034E70] text-[23px] '>
+            <h3 className='text-[#034E70] md:text-[23px] text-[20px]  '>
             Reliable Software Engineers
             </h3>
-            <span>
+            <span className="md:text-[20px] text-[16px] leading-6 font-[300] md:leading-8">
             With approximately 170 employees, the vast majority of whom are software engineers,
              we are one of the largest Danish IT companies.. The headquarters are still in
               Copenhagen, while our development center is in Islamabad, Pakistan. While it is

@@ -5,7 +5,7 @@ export default function FrontSection() {
         <>
             <section>
                 <div
-                    className="md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[450px] h-[250px]   w-screen flex justify-between
+                    className="md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[450px] h-[250px] flex justify-between
                      items-end "
                     style={{ backgroundImage: "url('/assets/images/about-us-Teo-scaled.jpg')" }}
                 >

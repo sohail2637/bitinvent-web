@@ -17,7 +17,7 @@ const Header = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#">
+          <a href="/home">
             <img
               className="w-[200px]"
               src="/assets/images/logo.png"
@@ -57,9 +57,9 @@ const Header = () => {
           <a href="/contact" className="hover:border-b-2 border-[#3a3a3a]">
             CONTACT
           </a>
-          <a href="/blog" className="hover:border-b-2 border-[#3a3a3a]">
+          {/* <a href="/blog" className="hover:border-b-2 border-[#3a3a3a]">
             BLOG
-          </a>
+          </a> */}
           {/* <div className="relative" onMouseEnter={() => setLanguageDropdown(true)} onMouseLeave={() => setLanguageDropdown(false)}>
             <a href="#" className="hover:border-b-2 border-[#3a3a3a]">
               ENGLISH
@@ -128,7 +128,7 @@ const Header = () => {
           {/* <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CLIENTS AND CASES</a> */}
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">ABOUT US</a>
           <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">CONTACT</a>
-          <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">BLOG</a>
+          {/* <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">BLOG</a> */}
           {/* <div className="relative w-full text-center">
             <button
               onClick={() => setDrawerLanguageDropdown(!drawerLanguageDropdown)}

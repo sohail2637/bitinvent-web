@@ -62,21 +62,14 @@ const Home = () => {
                     text-white text-base sm:text-lg leading-6 py-3 px-6 sm:py-4 sm:px-8 rounded-lg shadow-lg
                     hover:shadow-xl active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#009b72] focus:ring-opacity-50"
               >
-                LET'S TALK
+                LET&apos;S TALK
               </button>
             </div>
           </div>
         </div>
-
-        {/* Mobile-only decorative elements */}
-        <div className="md:hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </div>
       </div>
 
-   
+
       {/* second */}
       {/* 
       <div className="flex flex-wrap gap-5 items-start justify-center min-h-[500px] w-full py-12">
@@ -134,12 +127,15 @@ const Home = () => {
           <p className="md:text-[25px] text-[20px] leading-7 font-[400] md:leading-10">
             BitInvent-Innovating Software and IoT Solutions for Your Needs
           </p>
-          <div className="md:text-[20px] text[18px] font-[300] md:leading-7  flex flex-col gap-8 text-[#3a3a3a]">
+          <div className="md:text-[20px] text[18px] font-[300] md:leading-7 flex flex-col gap-8 text-[#3a3a3a]">
             <motion.span variants={itemVariants}>
-              BitInvent is a seasoned software and IoT solutions company with five years of experience, boasting a portfolio of over 100 Danish and international clients. Renowned for our technical expertise, effective communication, and exceptional project management, we deliver innovative IT solutions at competitive prices. Our agile approach allows us to handle projects of all sizes efficiently.        </motion.span>
+              BitInvent is a seasoned software and IoT solutions company with five years of experience, boasting a portfolio of over 100 international clients. Renowned for our technical expertise, effective communication, and exceptional project management, we deliver innovative IT solutions at competitive prices. Our agile approach allows us to handle projects of all sizes efficiently.
+            </motion.span>
             <motion.span variants={itemVariants}>
-              With an average customer retention rate of five years, our business model blends management and customer care from Copenhagen with software development by our team of 170+ engineers based in Faisalabad, Pakistan.        </motion.span>
+              With an average customer retention rate of five years, our business model blends management and customer care with software development by our team of 70+ engineers based in Faisalabad, Pakistan.
+            </motion.span>
           </div>
+
         </motion.div>
       </motion.div>
       {/* third */}
@@ -198,10 +194,7 @@ const Home = () => {
           </p>
           <div className="flex  flex-col md:gap-8 gap-6 text-[#3a3a3a]">
             <span className="md:text-[20px] text-[18px] font-[300] leading-7">
-              You can get help with development on existing systems or help with building
-              new complete software solutions with apps, backends and integrations.
-              We also build firmware and apps for IoT solutions.
-              We work closely with your existing IT department.
+              At BitInvent, we build software designed around your goals. From web and mobile apps to powerful backends, seamless integrations and innovative IoT solutions, we handle it all. We also collaborate closely with your IT team to ensure smooth implementation and deliver real, lasting value to your business.
             </span>
             <button className="bg-[#EF6461] hover:bg-[#db3431] w-[70%] md:w-1/2 text-white text-[16px] leading-6 py-3 px-4 rounded">
               How can we help?
@@ -223,9 +216,9 @@ const Home = () => {
       {/* five */}
 
 
-      <SliderComponent />
+      {/* <SliderComponent /> */}
       {/* six */}
-      <ValueForBusiness />
+      {/* <ValueForBusiness /> */}
       {/* <InsightsNews /> */}
     </>
   );

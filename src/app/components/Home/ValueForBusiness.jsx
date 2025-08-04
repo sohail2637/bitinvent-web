@@ -1,8 +1,8 @@
 const cardsData = [
-  {
-    heading: "Knowledge and skills",
-    para: "You get access to skills from our employees and partners with 600 technology employees.",
-  },
+  // {
+  //   heading: "Knowledge and skills",
+  //   para: "You get access to skills from our employees and partners with 600 technology employees.",
+  // },
   {
     heading: "Stability",
     para: "You get a team, processes and practices that reflect that our customers are typically with us for 6 years.",

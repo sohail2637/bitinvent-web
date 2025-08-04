@@ -113,6 +113,7 @@ export default function StackCard() {
                 >
                   <div className='flex items-center justify-start md:leading-9 leading-4' >
                   <Image src="/assets/icons/check-icon.svg"  
+                  alt='tech'
                 width={23} 
                 height={23}
                 />

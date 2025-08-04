@@ -1,16 +1,19 @@
-"use client";
+"use client"
 
-import { useRouter } from "next/navigation";
-import { useLayoutEffect } from "react";
+import Footer from "@/app/components/Footer/Footer"
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 
-function Main() {
-  const router = useRouter();
+export default function Dashboard() {
+  return (
 
-  useLayoutEffect(() => {
-    router.replace("/home");
-    return;
-  }, [router]);
-  return;
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <Home />
+
+      <Footer />
+    </div>
+
+  );
 }
 
-export default Main;

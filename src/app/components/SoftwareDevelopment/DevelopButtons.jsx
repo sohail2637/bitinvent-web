@@ -11,8 +11,8 @@ export default function DevelopButtons() {
                 <h1 className='text-[19.2px] text-[#034E70] p-5 font-normal '>Explore other services by TEO</h1>
                 <div className='flex justify-between items-center w-[80%] mr-auto ml-auto'>
                     {
-                        buttonData.map((data) => (
-                            <button className='rounded-md text-[16px] font-normal bg-[#034c6e] h-12 w-40 text-white '>{data}</button>
+                        buttonData.map((data , index) => (
+                            <button key={index} className='rounded-md text-[16px] font-normal bg-[#034c6e] h-12 w-40 text-white '>{data}</button>
                         ))
                     }
                 </div>

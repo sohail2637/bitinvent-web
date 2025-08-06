@@ -24,12 +24,12 @@ const cardsData = [
   const SocialResponsibility = () => {
     return (
       <>
-        <div className="flex flex-col justify-center items-center bg-[#F6F9FC] w-full mt-20 p-3 md:p-8 min-h-[350px]">
+        <div className="flex flex-col justify-center items-center bg-[#F6F9FC] w-full md:mt-20 mt-8 p-3 md:p-8 min-h-[350px]">
          <div className="py-4 flex justify-center items-center flex-wrap content-start md:w-[56%] w-full ">
-         <h1 className="text-[24px] font-[400] leading-6 mb-4 text-[#034E70] text-center">
+         <h1 className="md:text-[24px] text-[20px] font-[500] leading-6 mb-4 text-[#034E70] text-center">
           Corporate Social Responsibility
           </h1>
-          <p className="text-[20px] font-normal text-center md:mt-6 mt-3  ">Social responsibility is a crucial part of TEO’s corporate culture, and we support and 
+          <p className="md:text-[20px] text-[18px] font-normal text-center leading-6 md:leading-8 md:mt-6 ">Social responsibility is a crucial part of TEO’s corporate culture, and we support and 
             carry out a number of activities in this area.</p>
          </div>
          
@@ -37,9 +37,9 @@ const cardsData = [
               {cardsData?.map((card , i)=>{
                   return(
             <div key={i} className="w-full md:w-[10%] flex-1 md:p-4 ">
-              <h2 className=" text-[20px] font-[400] leading-7 mb-2 text-[#034E70]">{card.heading}</h2>
-              <p className="text-[16px] font-[300] leading-8 text-[#02283A] mt-6 mb-6">{card.para1}</p>
-              <p className="text-[16px] font-[300] leading-8 text-[#02283A] mt-6 mb-6">{card.para2}</p>
+              <h2 className=" md:text-[20px] text-[18px] font-[500] leading-7 md:mb-2 mb-0 text-[#034E70]">{card.heading}</h2>
+              <p className="md:text-[18px] text-[16px] font-[300] leading-6 md:leading-8 text-[#02283A] md:my-6 my-2">{card.para1}</p>
+              <p className="md:text-[18px] text-[16px] font-[300] leading-6 md:leading-8 text-[#02283A] md:my-6 my-2 ">{card.para2}</p>
             </div>
                   )   
               })}

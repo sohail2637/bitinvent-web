@@ -6,7 +6,7 @@ export default function BlogSection() {
     <>
     <section>
                 <div
-                    className="md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[500px] h-[185px]   w-screen flex justify-between
+                    className="md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[500px] h-[185px] flex justify-between
                      items-end "
                     style={{ backgroundImage: "url('/assets/images/blogging-theme.png')" }}
                 >

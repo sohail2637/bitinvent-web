@@ -28,7 +28,7 @@ export default function BlogCardDetail({ cardsData }) {
             <div key={index} className="md:p-4 p-2 bg-white flex justify-center items-center flex-col">
               <h2 className="text-[#034E70] text-[27.2px] font-normal md:p-6 text-center mb-3">{card.heading}</h2>
               <div className="relative w-full md:h-[700px] h-[200px] mb-8">
-                <Image src={card.image} layout="fill" objectFit="cover" />
+                <Image src={card.image} layout="fill" alt='tech' objectFit="cover" />
               </div>
               <div
                 dangerouslySetInnerHTML={{ __html: card.details }}

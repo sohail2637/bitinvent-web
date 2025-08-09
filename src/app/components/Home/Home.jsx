@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import SliderComponent from "./Slider";
 import ValueForBusiness from "./ValueForBusiness";
 import InsightsNews from "./InsightsNews"
+import HeroSection from "../Common/HeroSection";
 
 const containerVariants = {
   hidden: { opacity: 1 },
@@ -30,8 +31,7 @@ const Home = () => {
     <>
 
       {/* first */}
-      <div className="relative h-screen overflow-hidden">
-        {/* Background with mobile-optimized overlay */}
+      {/* <div className="relative h-screen overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center w-full"
           style={{
@@ -42,7 +42,6 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/40 md:bg-black/30 backdrop-blur-sm"></div>
         </div>
 
-        {/* Content container with mobile-specific adjustments */}
         <div className="absolute w-full px-6 top-1/2 transform -translate-y-1/2 md:w-1/2 md:left-10 md:p-10 text-white">
           <div className="max-w-xl space-y-4 md:space-y-6 animate-fadeIn">
             <h1
@@ -67,9 +66,18 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <main className="pt-[90px]">
 
-
+        <HeroSection
+          title="Software and IoT solutions,tailored for your business."
+          subtitle="We deliver IT-solutions and technical knowhow at reasonable prices across industries and fields."
+          backgroundImage="/assets/images/bg.jpg"
+          buttonText="Let's Talk"
+          buttonBgColor='bg-[#009b72]'
+          buttonTextColor='text-white'
+        />
+      </main>
       {/* second */}
       {/* 
       <div className="flex flex-wrap gap-5 items-start justify-center min-h-[500px] w-full py-12">
@@ -158,28 +166,59 @@ const Home = () => {
           variants={containerVariants}
         >
           <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <Image src="/assets/icons/web-dev.svg" alt="AI" width={70} height={70} />
-            <span>Software Development</span>
+            <a href="/ai-development" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/ai.svg" alt="AI" width={70} height={70} />
+              <span>AI SOFTWARE DEVELOPMENT</span>
+            </a>
           </motion.div>
-          <motion.div className="flex flex-col gap-5 items-center text-center w-full md:w-[30%]" variants={itemVariants}>
-            <Image src="/assets/icons/file.svg" alt="AI" width={70} height={70} />
-            <span>Embedded Systems</span>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/ai-chatbot-development" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/ai.svg" alt="AI Chatbot" width={70} height={70} />
+              <span>AI CHATBOT DEVELOPMENT</span>
+            </a>
           </motion.div>
-          <motion.div className="flex flex-col gap-5 items-center text-center w-full md:w-[30%]" variants={itemVariants}>
-            <Image src="/assets/icons/sqa.svg" alt="AI" width={70} height={70} />
-            <span>Software Testing | Quality Assurance</span>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/mobile-app-development" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/web-dev.svg" alt="Mobile App" width={70} height={70} />
+              <span>MOBILE APP DEVELOPMENT</span>
+            </a>
           </motion.div>
-          <motion.div className="flex flex-col gap-5 items-center text-center w-full md:w-[30%]" variants={itemVariants}>
-            <Image src="/assets/icons/pm.svg" alt="AI" width={70} height={70} />
-            <span>Project Management</span>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/chatgpt-integration" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/ai.svg" alt="ChatGPT" width={70} height={70} />
+              <span>CHAT GPT INTEGRATION</span>
+            </a>
           </motion.div>
-          <motion.div className="flex flex-col gap-5 items-center text-center w-full md:w-[30%]" variants={itemVariants}>
-            <Image src="/assets/icons/ai.svg" alt="AI" width={70} height={70} />
-            <span>Data and AI</span>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/devops" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/pm.svg" alt="DevOps" width={70} height={70} />
+              <span>DEVOPS</span>
+            </a>
           </motion.div>
-          <motion.div className="flex flex-col gap-5 items-center text-center w-full md:w-[30%]" variants={itemVariants}>
-            <Image src="/assets/icons/ui.svg" alt="AI" width={70} height={70} />
-            <span>UI UX Design Services</span>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/custom-software" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/web-dev.svg" alt="Custom Software" width={70} height={70} />
+              <span>CUSTOM SOFTWARE</span>
+            </a>
+          </motion.div>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/custom-web-development" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/web-dev.svg" alt="Web Development" width={70} height={70} />
+              <span>CUSTOM WEB DEVELOPMENT</span>
+            </a>
+          </motion.div>
+
+          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
+            <a href="/ui-ux-design" className="flex flex-col items-center gap-5">
+              <Image src="/assets/icons/ui.svg" alt="UI/UX Design" width={70} height={70} />
+              <span>UI UX DESIGN</span>
+            </a>
           </motion.div>
         </motion.div>
       </div>
@@ -196,9 +235,13 @@ const Home = () => {
             <span className="md:text-[20px] text-[18px] font-[300] leading-7">
               At BitInvent, we build software designed around your goals. From web and mobile apps to powerful backends, seamless integrations and innovative IoT solutions, we handle it all. We also collaborate closely with your IT team to ensure smooth implementation and deliver real, lasting value to your business.
             </span>
-            <button className="bg-[#EF6461] hover:bg-[#db3431] w-[70%] md:w-1/2 text-white text-[16px] leading-6 py-3 px-4 rounded">
+            <a
+              href="/contact"
+              className="inline-block w-[200px] text-center bg-[#EF6461] hover:bg-[#db3431] text-white text-[16px] leading-6 px-6 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition-all duration-200"
+            >
               How can we help?
-            </button>
+            </a>
+
           </div>
         </div>
         <div className=" w-[100%] md:w-[37%] flex justify-center">

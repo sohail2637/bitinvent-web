@@ -175,6 +175,31 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
+  // All services routes for active state
+  const serviceRoutes = [
+    '/service-update',
+    '/ai-development',
+    '/ai-chatbot-development',
+    '/mobile-app-development',
+    '/chatgpt-integration',
+    '/devops',
+    '/custom-software',
+    '/custom-web-development',
+    '/ui-ux-design'
+  ];
+
+  // Function to check active state
+  const isActive = (href) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
+
+  const isServicesActive = () => {
+    return serviceRoutes.some(route => pathname.startsWith(route));
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -182,13 +207,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const isActive = (href) => {
-    if (href === '/') {
-      return pathname === '/';
-    }
-    return pathname.startsWith(href);
-  };
 
   // Close drawer when route changes
   useEffect(() => {
@@ -217,12 +235,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-x-8 text-[13px] font-[500] leading-[26px] text-[#3a3a3a]" style={{ fontFamily: 'Lato, sans-serif' }}>
-            <a
-              href="/"
-              className={`transition-all duration-200 ${isActive('/') ? 'border-b-2 border-[#3a3a3a]' : 'hover:border-b-2 border-[#3a3a3a]'}`}
-            >
-              HOME
-            </a>
             <div
               className="relative"
               onMouseEnter={() => setServicesDropdown(true)}
@@ -230,21 +242,76 @@ const Header = () => {
             >
               <a
                 href="/service-update"
-                className={`transition-all duration-200 ${isActive('/service-update') ? 'border-b-2 border-[#3a3a3a]' : 'hover:border-b-2 border-[#3a3a3a]'}`}
+                className={`transition-all duration-200 ${isServicesActive()
+                  ? 'border-b-2 border-[#3a3a3a]'
+                  : 'hover:border-b-2 border-[#3a3a3a]'
+                  }`}
               >
                 SERVICES
               </a>
               <div
-                className={`absolute left-0 z-10 w-[220px] bg-white shadow-md rounded-b-md overflow-hidden transition-all duration-300 ${servicesDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+                className={`absolute left-0 z-10 w-[220px] bg-white shadow-md rounded-b-md overflow-hidden transition-all duration-300 ${servicesDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
+                  }`}
               >
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">SOFTWARE DEVELOPMENT</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">EMBEDDED SYSTEMS</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">SOFTWARE TESTING & QA</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">PROJECT MANAGEMENT</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">DATA AND AI</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">UI/UX DESIGN SERVICES</a>
+                <a
+                  href="/ai-development"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/ai-development') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  AI SOFTWARE DEVELOPMENT
+                </a>
+                <a
+                  href="/ai-chatbot-development"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/ai-chatbot-development') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  AI CHATBOT DEVELOPMENT
+                </a>
+                <a
+                  href="/mobile-app-development"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/mobile-app-development') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  MOBILE APP DEVELOPMENT
+                </a>
+                <a
+                  href="/chatgpt-integration"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/chatgpt-integration') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  CHAT GPT INTEGRATION
+                </a>
+                <a
+                  href="/devops"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/devops') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  DEVOPS
+                </a>
+                <a
+                  href="/custom-software"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/custom-software') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  CUSTOM SOFTWARE
+                </a>
+                <a
+                  href="/custom-web-development"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/custom-web-development') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  CUSTOM WEB DEVELOPMENT
+                </a>
+                <a
+                  href="/ui-ux-design"
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive('/ui-ux-design') ? 'bg-gray-100 text-[#3a3a3a] font-semibold' : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                >
+                  UI UX DESIGN
+                </a>
               </div>
             </div>
+
             <a
               href='/tech-stack'
               className={`transition-all duration-200 ${isActive('/tech-stack') ? 'border-b-2 border-[#3a3a3a]' : 'hover:border-b-2 border-[#3a3a3a]'}`}
@@ -264,8 +331,6 @@ const Header = () => {
               CONTACT
             </a>
           </div>
-
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               type="button"
@@ -297,13 +362,14 @@ const Header = () => {
             </button>
           </div>
         </nav>
-
-        {/* Mobile Drawer Backdrop */}
         <div
-          className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${drawerOpen ? 'opacity-100 md:opacity-0 md:hidden' : 'opacity-0 pointer-events-none'}`}
+          className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${drawerOpen ? 'opacity-100 md:opacity-0 md:hidden' : 'opacity-0 pointer-events-none'
+            }`}
           onClick={() => setDrawerOpen(false)}
         />
+
       </header>
+
 
       {/* Mobile Drawer */}
       <div
@@ -316,7 +382,7 @@ const Header = () => {
                 className="w-[160px]"
                 src="/assets/images/logo.png"
                 alt="Company Logo"
-                 width={200}
+                width={200}
                 height={50}
               />
             </a>
@@ -331,17 +397,10 @@ const Header = () => {
           </div>
 
           <div className="flex flex-col space-y-2">
-            <a
-              href="/"
-              className={`px-4 py-3 rounded-md text-base font-medium ${isActive('/') ? 'bg-gray-100 text-[#3a3a3a]' : 'text-gray-700 hover:bg-gray-100'} transition-colors duration-200`}
-            >
-              HOME
-            </a>
-
             <div className="flex flex-col">
               <button
                 onClick={() => setDrawerServicesDropdown(!drawerServicesDropdown)}
-                className={`px-4 py-3 rounded-md text-base font-medium flex items-center justify-between ${isActive('/service-update') ? 'bg-gray-100 text-[#3a3a3a]' : 'text-gray-700 hover:bg-gray-100'} transition-colors duration-200`}
+                className={`px-4 py-3 rounded-md text-base font-medium flex items-center justify-between ${isServicesActive() ? 'bg-gray-100 text-[#3a3a3a]' : 'text-gray-700 hover:bg-gray-100'} transition-colors duration-200`}
               >
                 <span>SERVICES</span>
                 <svg
@@ -354,15 +413,17 @@ const Header = () => {
                 </svg>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${drawerServicesDropdown ? 'max-h-96' : 'max-h-0'}`}
+                className={`overflow-hidden transition-all duration-300 ${drawerServicesDropdown ? 'max-h-[27rem]' : 'max-h-0'}`}
               >
                 <div className="pl-6 py-1 flex flex-col space-y-1">
-                  <a href="#" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200">SOFTWARE DEVELOPMENT</a>
-                  <a href="#" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200">EMBEDDED SYSTEMS</a>
-                  <a href="#" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200">SOFTWARE TESTING & QA</a>
-                  <a href="#" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200">PROJECT MANAGEMENT</a>
-                  <a href="#" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200">DATA AND AI</a>
-                  <a href="#" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200">UI/UX DESIGN SERVICES</a>
+                  <a href="/ai-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">AI SOFTWARE DEVELOPMENT</a>
+                  <a href="/ai-chatbot-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">AI CHATBOT DEVELOPMENT</a>
+                  <a href="/mobile-app-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">MOBILE APP DEVELOPMENT</a>
+                  <a href="/chatgpt-integration" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">CHAT GPT INTEGRATION</a>
+                  <a href="/devops" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">DEVOPS</a>
+                  <a href="/custom-software" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">CUSTOM SOFTWARE</a>
+                  <a href="/custom-web-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">CUSTOM WEB DEVELOPMENT</a>
+                  <a href="/ui-ux-design" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200">UI UX DESIGN</a>
                 </div>
               </div>
             </div>

@@ -103,6 +103,7 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
+import WhyChose from '../Common/WhyChose';
 
 const MainSection = () => {
   const containerVariants = {
@@ -237,7 +238,7 @@ const MainSection = () => {
           </motion.section>
 
           {/* Why Contact Us Section */}
-          <motion.section
+          {/* <motion.section
             className="md:mb-28 mb-9"
             initial="hidden"
             whileInView="visible"
@@ -263,7 +264,8 @@ const MainSection = () => {
                 ))}
               </div>
             </motion.div>
-          </motion.section>
+          </motion.section> */}
+          <WhyChose />
         </div>
       </div>
     </>

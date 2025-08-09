@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import SliderComponent from "./Slider";
 import ValueForBusiness from "./ValueForBusiness";
 import InsightsNews from "./InsightsNews"
+import IndustryCard from "./IndustryCard"
+import HomeServicesSection from "./HomeServicesSection"
 import HeroSection from "../Common/HeroSection";
 
 const containerVariants = {
@@ -20,53 +22,55 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 1.5 } } // Adjust duration for slower animation
 };
 
+export const industries = [
+  {
+    title: "Healthcare",
+    description: "Transforming patient care with AI-powered diagnostics and personalized treatment.",
+    bgImage: "/assets/images/HealthCare.png",
+  },
+  {
+    title: "E-commerce & Retail",
+    description: "Driving sales and customer engagement with personalized shopping experiences.",
+    bgImage: "/assets/images/ecommerce.png",
+  },
+  {
+    title: "Education & E-learning",
+    description: "Enhancing learning through interactive digital platforms and AI-driven insights.",
+    bgImage: "/assets/images/eLearning.png",
+  },
+  {
+    title: "Finance & Fintech",
+    description: "Revolutionizing financial services with secure, fast, and data-driven solutions.",
+    bgImage: "/assets/images/finance.png",
+  },
+  {
+    title: "Real Estate",
+    description: "Empowering property management and sales with virtual tours and smart analytics.",
+    bgImage: "/assets/images/realState.png",
+  },
+  {
+    title: "Travel & Hospitality",
+    description: "Elevating guest experiences with AI-driven booking, personalization, and service.",
+    bgImage: "/assets/images/travel.png",
+  },
+  {
+    title: "Logistics & Supply Chain",
+    description: "Optimizing operations with real-time tracking and predictive analytics.",
+    bgImage: "/assets/images/supply.png",
+  },
+  {
+    title: "Legal & Compliance",
+    description: "Streamlining compliance and legal processes with AI-powered document analysis.",
+    bgImage: "/assets/images/legal.png",
+  },
+];
 
-// const variants = {
-//   hidden: { opacity: 0, y: 50 },
-//   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-// };
+
 
 const Home = () => {
   return (
     <>
 
-      {/* first */}
-      {/* <div className="relative h-screen overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center w-full"
-          style={{
-            backgroundImage: 'url("/assets/images/bg.jpg")',
-            backgroundPosition: 'center center'
-          }}
-        >
-          <div className="absolute inset-0 bg-black/40 md:bg-black/30 backdrop-blur-sm"></div>
-        </div>
-
-        <div className="absolute w-full px-6 top-1/2 transform -translate-y-1/2 md:w-1/2 md:left-10 md:p-10 text-white">
-          <div className="max-w-xl space-y-4 md:space-y-6 animate-fadeIn">
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl font-light leading-snug sm:leading-tight text-white mb-3 md:mb-4"
-              style={{ fontFamily: "Roboto, sans-serif" }}
-            >
-              Software and IoT solutions, <span className="font-medium">tailored for your business.</span>
-            </h1>
-
-            <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed text-white/90 mb-6 md:mb-8">
-              We deliver IT-solutions and technical knowhow at reasonable prices across industries and fields.
-            </p>
-
-            <div className="flex justify-center md:justify-start">
-              <button
-                className="bg-[#009b72] hover:bg-[#1aa37f] transition-all duration-300 ease-in-out 
-                    text-white text-base sm:text-lg leading-6 py-3 px-6 sm:py-4 sm:px-8 rounded-lg shadow-lg
-                    hover:shadow-xl active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#009b72] focus:ring-opacity-50"
-              >
-                LET&apos;S TALK
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <main className="pt-[90px]">
 
         <HeroSection
@@ -78,42 +82,6 @@ const Home = () => {
           buttonTextColor='text-white'
         />
       </main>
-      {/* second */}
-      {/* 
-      <div className="flex flex-wrap gap-5 items-start justify-center min-h-[500px] w-full py-12">
-        <div className=" w-[90%] md:w-[37%]  flex justify-center">
-          <Image
-            src="/assets/images/meeting.jpg"
-            alt="meeting"
-            width={550}
-            layout="responsive"
-            className="rounded-md"
-            height={309}
-          />
-        </div>
-
-        <div className="w-[90%] px-1 md:w-[40%] flex flex-col gap-8 ">
-          <p className="text-[25px] font-[400] leading-10 ">
-            {" "}
-            TEO - builders of software and IoT solutions
-          </p>
-          <div className="text-[20px] font-[300] leading-7 flex  flex-col gap-8 text-[#3a3a3a]   ">
-            <span>
-              TEO is an experienced software and IoT solutions company with 17
-              years of experience and a portfolio of 100+ Danish and
-              international clients. We are praised for our technical prowess,
-              communication, and project management. We offer innovative IT
-              solutions at competitive prices and can agilely handle projects of
-              all sizes.
-            </span>
-            <span>
-              With an average customer retention of six years, our business
-              concept combines Copenhagen for management and customer care with
-              software development by our 170+ engineers in Islamabad, Pakistan.
-            </span>
-          </div>
-        </div>
-      </div> */}
       <motion.div
         className="flex flex-wrap gap-5 items-start justify-center min-h-[500px] w-full py-12"
         initial="hidden"
@@ -146,84 +114,27 @@ const Home = () => {
 
         </motion.div>
       </motion.div>
-      {/* third */}
 
+      <div className="lg:pt-16 pt-7">
+        <div className="text-center md:mb-16 mb-4">
+          <h1 className="lg:text-3xl text-2xl font-bold text-center text-gray-800 mb-6">Industries We Transformed with Innovative Software Solutions</h1>
+          <p className="md:text-xl text-lg  text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            We are committed to innovating across industries with our custom AI solutions, empowering businesses to thrive in the digital era.
+          </p>
+        </div>
 
-      <div className="bg-[#174163] w-full min-h-[calc(100vh-60px)] flex flex-col md:gap-10 gap-5 justify-center md:p-5 p-3">
-        <motion.div
-          className="text-[20px] leading-7 font-bold text-[#FFFFFF] md:p-5 p-3 flex justify-center items-center"
-          initial="hidden"
-          animate="visible"
-          variants={itemVariants}
-        >
-          BITINVENT SERVICES
-        </motion.div>
-
-        <motion.div
-          className="text-[16px] leading-6 font-[300] text-[#cbd5e1] flex flex-col p-5 md:flex-row md:flex-wrap gap-y-10 justify-center items-center"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/ai-development" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/ai.svg" alt="AI" width={70} height={70} />
-              <span>AI SOFTWARE DEVELOPMENT</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/ai-chatbot-development" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/ai.svg" alt="AI Chatbot" width={70} height={70} />
-              <span>AI CHATBOT DEVELOPMENT</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/mobile-app-development" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/web-dev.svg" alt="Mobile App" width={70} height={70} />
-              <span>MOBILE APP DEVELOPMENT</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/chatgpt-integration" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/ai.svg" alt="ChatGPT" width={70} height={70} />
-              <span>CHAT GPT INTEGRATION</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/devops" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/pm.svg" alt="DevOps" width={70} height={70} />
-              <span>DEVOPS</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/custom-software" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/web-dev.svg" alt="Custom Software" width={70} height={70} />
-              <span>CUSTOM SOFTWARE</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/custom-web-development" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/web-dev.svg" alt="Web Development" width={70} height={70} />
-              <span>CUSTOM WEB DEVELOPMENT</span>
-            </a>
-          </motion.div>
-
-          <motion.div className="flex flex-col gap-5 items-center w-full md:w-[30%]" variants={itemVariants}>
-            <a href="/ui-ux-design" className="flex flex-col items-center gap-5">
-              <Image src="/assets/icons/ui.svg" alt="UI/UX Design" width={70} height={70} />
-              <span>UI UX DESIGN</span>
-            </a>
-          </motion.div>
-        </motion.div>
+        <IndustryCard industries={industries} />
       </div>
 
-      {/* fourth */}
+      <section className="lg:pt-16 pt-7">
+        <div className="text-center md:mb-16 mb-4">
+        <h1 className="lg:text-3xl text-2xl font-bold text-center text-gray-800 mb-6">
+                    BITINVENT SERVICES
+        </h1>
+        </div>
+        <HomeServicesSection />
+      </section>
+
 
       <div className="flex flex-wrap gap-10 items-center justify-center min-h-[500px] w-full md:py-12 py-9 bg-[#ebf5fd]">
         <div className="  w-[90%] md:w-[40%] flex flex-col md:gap-8 gap-6 ">

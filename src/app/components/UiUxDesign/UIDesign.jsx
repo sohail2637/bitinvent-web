@@ -16,7 +16,7 @@ export default function UIDesign() {
           title="Elevate Your Digital Presence With Exceptional UI/UX Design"
           subtitle="Craft captivating interfaces for seamless navigation and enhanced user engagement with our top-tier UI/UX design services."
           buttonText="Let's Connect"
-          backgroundImage="/assets/images/ai-chatbot.png"
+          backgroundImage="/assets/images/UiUxDesign.webp"
 
         />
       </main>

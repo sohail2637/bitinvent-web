@@ -104,7 +104,7 @@ export default function MobileAppDevelopment() {
         title="Custom Mobile App Development"
         subtitle="Turn your business ideas into compelling, user-focused apps with our top-tier Mobile App Developer Services."
         buttonText="Let's Connect"
-        backgroundImage="/assets/images/customSoftware.webp"
+        backgroundImage="/assets/images/mobileApp.webp"
 
       />
 </main>
@@ -115,7 +115,7 @@ export default function MobileAppDevelopment() {
           </>
         }
         description="BitInvent, a top-tier mobile app development company, delivers cutting-edge custom solutions. We help ambitious businesses to build scalable, user-focused apps that succeed.Our app development team collaborates to create custom features, streamline processes for a better user experience, analyze usage patterns for mobile optimization, and deliver actionable insights to refine your mobile strategy."
-        imageSrc="/assets/images/chatgpt-img.jpg"
+        imageSrc="/assets/images/mobileApp.webp"
         buttonText="Schedule a Demo"
         buttonLink="/contact"
       />

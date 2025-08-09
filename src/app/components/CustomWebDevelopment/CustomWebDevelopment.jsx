@@ -16,7 +16,7 @@ export default function CustomWebDevelopment() {
           title="Revolutionize Your Online Presence With Custom Web Development"
           subtitle="Unlock your business's full potential with our Custom Web Development Services. Tailored solutions designed to boost efficiency, streamline processes, and drive growth."
           buttonText="Let's Connect"
-          backgroundImage="/assets/images/customSoftware.webp"
+          backgroundImage="/assets/images/WebDevelop.webp"
 
         />
       </main>
@@ -27,7 +27,7 @@ export default function CustomWebDevelopment() {
           </>
         }
         description="BitInvent is a leading web development company specializing in custom web development, custom website development, and bespoke web design services. Our expert team follows a comprehensive development process to design, build, deploy, and maintain tailored websites and applications that meet the unique needs of specific users and organizations."
-        imageSrc="/assets/images/chatgpt-img.jpg"
+        imageSrc="/assets/images/WebDevelop.webp"
         buttonText="Schedule a Demo"
         buttonLink="/contact"
       />

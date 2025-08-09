@@ -8,9 +8,6 @@ export default function StackCard() {
           name: 'Backend',
           techs: [
             '.NET, Core',
-            'Java',
-            'C/C++',
-            'Golang',
             'PhP',
             'Laravel',
             'Symphony',
@@ -35,8 +32,6 @@ export default function StackCard() {
           name: 'Mobile',
           techs: [
             'Swift',
-            'C/C++',
-            'Java',
             'Kotlin',
             'React Native',
             'Flutter',
@@ -46,15 +41,11 @@ export default function StackCard() {
         {
           name: 'CMS/CRM/ERP',
           techs: [
-            'SalesForce',
-            'Dynamics 365',
-            'HubSpot',
+            'Sanity',
+            'Strapi',
+            'Payload CMS',
             'WordPress',
-            'MongoDB',
-            'Magento',
-            'nopCommerce',
-            'Umbraco',
-            'Sharepoint',
+            'Contentful',
           ],
         },
         {
@@ -78,11 +69,24 @@ export default function StackCard() {
           {
             name: 'Testing',
             techs: [
-              'Postman​',
-              'Azure DevOps​',
-              'Kualitee', 
+              'Jest',
+              'Mocha',
+              'Cypress', 
+              'Vitest'
             ],
-          },{
+          }
+          // {
+          //   name: 'Testing Tools',
+          //   techs: [
+          //     'Selenium',
+          //     'TestCafe',
+          //     'Postman', 
+          //     'BrowserStack',
+          //     'JMeter',
+          //     'LambdaTest'
+          //   ],
+          // }
+          ,{
             name: 'Project Management',
             techs: [
               'SCRUM/Agile',

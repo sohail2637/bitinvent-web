@@ -223,7 +223,7 @@ const Header = () => {
           <div className="flex lg:flex-1">
             <a href="/">
               <Image
-                src="/assets/images/logo.png"
+                src="/assets/images/logo.webp"
                 alt="Company Logo"
                 width={200}
                 height={50}

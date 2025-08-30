@@ -99,7 +99,11 @@ const Footer = () => {
                 <li>Main Commercial Area,</li>
                 <li>44000 Islamabad, Pakistan</li> */}
                 <li className="font-medium hover:text-white transition-colors">
+                 <a
+                  href="mailto:byte@bitinvent.org"
+                >
                   byte@bitinvent.org
+                </a>
                 </li>
                 {/* <li>+92 305 5534249</li> */}
               </ul>

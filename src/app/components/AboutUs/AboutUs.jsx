@@ -55,6 +55,7 @@
 
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import HeroSection from '../Common/HeroSection';
 // import FrontSection from "./FrontSection"
 
 const AboutUs = () => {
@@ -75,33 +76,16 @@ const AboutUs = () => {
     <>
 
       {/* <FrontSection /> */}
-      <div className="min-h-screen bg-[#f8f9fb] text-gray-800">
+      <div className="min-h-screen bg-[#f8f9fb] text-gray-800 pt-[90px]">
         {/* Hero Section */}
-        <motion.section
-          className="relative md:py-28 py-6 px-6 bg-gradient-to-br from-white to-gray-100"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="container mx-auto text-center">
-            <motion.h1
-              className="text-4xl md:text-6xl font-serif font-bold md:mb-6 mb-3 text-gray-900"
-              initial={{ y: -50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-            >
-              About <span className="text-blue-600">BitInvent</span>
-            </motion.h1>
-            <motion.p
-              className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600"
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-            >
-              Where innovation meets excellence in technology solutions
-            </motion.p>
-          </div>
-        </motion.section>
+
+        <HeroSection
+          title="About Us"
+          subtitle="We create amazing digital products."
+          backgroundImage="/assets/images/about.webp"
+
+        />
+
 
         <div className="container mx-auto px-6 lg:px-20 md:py-20 py-6">
           {/* Our Story */}
@@ -112,27 +96,27 @@ const AboutUs = () => {
             viewport={{ once: true, margin: '-100px' }}
             variants={containerVariants}
           >
-          
-              <motion.div variants={itemVariants}>
-                <div className="flex items-center mb-6">
-                  <div className="h-px w-12 bg-blue-500 mr-4"></div>
-                  <span className="text-blue-600 font-medium">OUR BEGINNINGS</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gray-900 leading-tight">
-                  Crafting digital excellence since 2019
-                </h2>
-                <p className="md:text-[20px] text[18px] md:leading-7 mb-6 text-gray-600 leading-relaxed">
-                  Founded in Faisalabad, Pakistan, BitInvent began as a passionate
-                  collective of visionaries determined to transform the digital
-                  landscape. Our journey started with a simple belief: technology
-                  should empower, not complicate.
-                </p>
-                <p className="md:text-[20px] text[18px] md:leading-7 text-gray-600 leading-relaxed">
-                  Today, we&apos;ve grown into a global team of strategists, designers, and
-                  engineers who bridge the gap between ambitious ideas and exceptional
-                  digital experiences.
-                </p>
-              </motion.div>
+
+            <motion.div variants={itemVariants}>
+              <div className="flex items-center mb-6">
+                <div className="h-px w-12 bg-blue-500 mr-4"></div>
+                <span className="text-blue-600 font-medium">OUR BEGINNINGS</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold md:mb-6 mb-3 text-gray-900 leading-7 md:leading-tight">
+                Crafting digital excellence since 2019
+              </h2>
+              <p className="md:text-[20px] text[18px] md:leading-7 md:mb-6 mb-3 text-gray-600 leading-relaxed">
+                Founded in Faisalabad, Pakistan, BitInvent began as a passionate
+                collective of visionaries determined to transform the digital
+                landscape. Our journey started with a simple belief: technology
+                should empower, not complicate.
+              </p>
+              <p className="md:text-[20px] text[18px] md:leading-7 text-gray-600 leading-relaxed">
+                Today, we&apos;ve grown into a global team of strategists, designers, and
+                engineers who bridge the gap between ambitious ideas and exceptional
+                digital experiences.
+              </p>
+            </motion.div>
           </motion.section>
 
           {/* Our Mission */}
@@ -266,12 +250,14 @@ const AboutUs = () => {
               ].map((value, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white p-8 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-xl transition"
+                  className="bg-white lg:p-8 p-4 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-xl transition"
                   variants={itemVariants}
                   whileHover={{ y: -5 }}
                 >
-                  <div className="flex justify-center text-blue-600 mb-6">{value.icon}</div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">{value.title}</h3>
+                  <div className="flex justify-center gap-3 md:gap-5 items-start flex-row text-blue-600 mb-2">
+                    <p>{value.icon}</p>
+                  <h3 className="text-xl font-bold lg:mb-4 mb-0 text-gray-900">{value.title}</h3>
+                    </div>
                   <p className="text-gray-600">{value.desc}</p>
                 </motion.div>
               ))}
@@ -280,20 +266,20 @@ const AboutUs = () => {
 
           {/* Stats Section */}
           <motion.section
-            className="md:mt-32 mt-6 md:mb-20 bg-white border border-gray-100 rounded-2xl p-12 shadow-lg"
+            className="md:mt-20 mt-6 md:mb-20 bg-white border border-gray-100 rounded-2xl md:p-12 p-6 shadow-lg"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={containerVariants}
           >
-            <motion.div className="grid md:grid-cols-3 gap-8" variants={containerVariants}>
+            <motion.div className="grid md:grid-cols-3 md:gap-8 gap-4" variants={containerVariants}>
               {[
                 { number: '150+', label: 'Projects Completed' },
                 { number: '40+', label: 'Satisfied Clients' },
                 { number: '5', label: 'Years of Excellence' }
               ].map((stat, index) => (
                 <motion.div key={index} className="text-center" variants={itemVariants}>
-                  <div className="text-5xl font-bold text-blue-600 mb-3">{stat.number}</div>
+                  <div className="text-5xl font-bold text-blue-600 md:mb-3 mb-0">{stat.number}</div>
                   <div className="text-xl text-gray-700">{stat.label}</div>
                 </motion.div>
               ))}

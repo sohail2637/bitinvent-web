@@ -6,6 +6,8 @@ import InsightsNews from "./InsightsNews"
 import IndustryCard from "./IndustryCard"
 import HomeServicesSection from "./HomeServicesSection"
 import HeroSection from "../Common/HeroSection";
+import FAQ from "../Home/FAQ";
+import Slider from "./Slider";
 
 const containerVariants = {
   hidden: { opacity: 1 },
@@ -83,7 +85,7 @@ const Home = () => {
         />
       </main>
       <motion.div
-        className="flex flex-wrap gap-5 items-start justify-center min-h-[500px] w-full py-12"
+        className="flex flex-wrap gap-5 items-start justify-center min-h-[500px] w-full md:py-12 py-0 pb-9"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -115,10 +117,10 @@ const Home = () => {
         </motion.div>
       </motion.div>
 
-      <div className="lg:pt-16 pt-7">
-        <div className="text-center md:mb-16 mb-4">
-          <h1 className="lg:text-3xl text-2xl font-bold text-center text-gray-800 mb-6">Industries We Transformed with Innovative Software Solutions</h1>
-          <p className="md:text-xl text-lg  text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      <div className="lg:pt-16 pt-7 ">
+        <div className="text-center md:mb-16 px-3 mb-4">
+          <h1 className="lg:text-3xl text-xl font-bold text-center text-gray-800 md:mb-6 mb-2">Industries We Transformed with Innovative Software Solutions</h1>
+          <p className="md:text-xl text-base  text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We are committed to innovating across industries with our custom AI solutions, empowering businesses to thrive in the digital era.
           </p>
         </div>
@@ -169,8 +171,8 @@ const Home = () => {
       </div>
       {/* five */}
 
-
-      {/* <SliderComponent /> */}
+      {/* <Slider /> */}
+<FAQ />
       {/* six */}
       {/* <ValueForBusiness /> */}
       {/* <InsightsNews /> */}

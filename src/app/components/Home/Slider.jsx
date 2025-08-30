@@ -9,36 +9,29 @@ import Image from 'next/image';
 const profiles = [
   {
     id: 1,
-    image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-2.png',
-    name: 'John Doe',
-    role: 'Software Engineer',
-    heading: 'About John',
+    // image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-2.png',
+    name: 'Shakeel',
+    role: 'Owner',
+    heading: 'About Shakeel',
     description: "“Not only has TEO delivered on time and budget, but they have helped to drive knowledge transfer across team and provide ad hoc project management to ﬁll eBay's own internal staffing gaps. We would recommend TEO to any organization looking for a software development partner and would not hesitate to work with TEO again in the future.”"
   },
   {
     id: 2,
-    image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-2.png',
-    name: 'John Doe',
-    role: 'Software Engineer',
-    heading: 'About John',
+    // image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-2.png',
+    name: 'Shakeel',
+    role: 'Owner',
+    heading: 'About Shakeel',
     description: "“Not only has TEO delivered on time and budget, but they have helped to drive knowledge transfer across team and provide ad hoc project management to ﬁll eBay's own internal staffing gaps. We would recommend TEO to any organization looking for a software development partner and would not hesitate to work with TEO again in the future.”"
   },
   {
     id: 3,
-    image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-2.png',
-    name: 'John Doe',
-    role: 'Software Engineer',
-    heading: 'About John',
+    // image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-2.png',
+    name: 'Atique-ur-Rehman',
+    role: 'Owner',
+    heading: 'About Atique',
     description: "“Not only has TEO delivered on time and budget, but they have helped to drive knowledge transfer across team and provide ad hoc project management to ﬁll eBay's own internal staffing gaps. We would recommend TEO to any organization looking for a software development partner and would not hesitate to work with TEO again in the future.”"
   },
-  {
-    id: 4,
-    image: 'https://teo.dk/wp-content/uploads/2023/06/noroot-3.png',
-    name: 'Jane Smith',
-    role: 'Product Manager',
-    heading: 'About Jane',
-    description: 'Jane is an experienced product manager with a passion for building user-centric products. She has led several successful projects and is always eager to take on new challenges.',
-  },
+ 
 ];
 
 const PrevArrowComponent = (props) => {
@@ -139,10 +132,10 @@ const SliderComponent = () => {
   };
 
   return (
-    <div className="md:py-12 py-6 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div className="md:py-12 py-6 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="text-center md:mb-10 mb-5">
         <h2 className="text-xl md:text-2xl font-medium text-[#034e70]">
-          WHAT OUR DANISH CUSTOMERS SAY
+          WHAT OUR CUSTOMERS SAY
         </h2>
       </div>
 
@@ -152,13 +145,13 @@ const SliderComponent = () => {
             <div key={profile.id} className="px-2 sm:px-4 focus:outline-none">
               <div className="bg-white rounded-lg p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="flex flex-col items-center">
-                  <Image
+                  {/* <Image
                     src={profile.image}
                     alt={profile.name}
                     width={80}
                     height={80}
                     className="rounded-full object-cover mb-4"
-                  />
+                  /> */}
                   <h3 className="text-lg sm:text-xl font-medium text-[#034e70]">{profile.name}</h3>
                   <p className="text-sm sm:text-base text-[#034e70] md:mb-6 mb-3">{profile.role}</p>
                   <h4 className="md:text-[25px] text-[20px] font-medium text-[#143848] mb-4">{profile.heading}</h4>

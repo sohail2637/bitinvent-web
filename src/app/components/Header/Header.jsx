@@ -318,6 +318,13 @@ const Header = () => {
             >
               TECH STACK
             </a>
+             <a
+              href="/portfolio"
+              className={`transition-all duration-200 ${isActive('/portfolio') ? 'border-b-2 border-[#3a3a3a]' : 'hover:border-b-2 border-[#3a3a3a]'}`}
+            >
+              PORTFOLIO
+              
+            </a>
             <a
               href="/aboutUs"
               className={`transition-all duration-200 ${isActive('/aboutUs') ? 'border-b-2 border-[#3a3a3a]' : 'hover:border-b-2 border-[#3a3a3a]'}`}
@@ -435,6 +442,13 @@ const Header = () => {
               TECH STACK
             </a>
 
+            <a
+              href="/portfolio"
+              className={`px-4 py-3 rounded-md text-base font-medium ${isActive('/portfolio') ? 'bg-gray-100 text-[#3a3a3a]' : 'text-gray-700 hover:bg-gray-100'} transition-colors duration-200`}
+            >
+              PORTFOLIO
+              
+            </a>
             <a
               href="/aboutUs"
               className={`px-4 py-3 rounded-md text-base font-medium ${isActive('/aboutUs') ? 'bg-gray-100 text-[#3a3a3a]' : 'text-gray-700 hover:bg-gray-100'} transition-colors duration-200`}

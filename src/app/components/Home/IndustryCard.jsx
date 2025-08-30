@@ -6,18 +6,18 @@ export default function Home({ industries }) {
   const currentBg = industries[hoverIndex]?.bgImage || "/assets/images/HealthCare.png";
 
   return (
-    <main className="min-h-screen bg-gray-900">
+    <main className="bg-gray-900">
       <section
-        className="relative w-full h-screen bg-cover bg-center transition-all duration-700 ease-in-out"
+        className="relative w-full md:h-screen  bg-cover bg-center transition-all duration-700 ease-in-out"
         style={{
           backgroundImage: `url(${currentBg})`,
         }}
       >
-        <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 w-full h-full">
+        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 w-full h-full auto-rows-min">
           {industries.map((item, idx) => (
             <div
               key={idx}
-              className="relative border border-white/30 flex items-center justify-center p-6 cursor-pointer"
+              className="relative border border-white/30 flex items-center justify-center p-6 cursor-pointer h-64 md:h-full" 
               onMouseEnter={() => setHoverIndex(idx)}
             >
               {hoverIndex !== idx && (

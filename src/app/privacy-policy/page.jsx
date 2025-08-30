@@ -8,7 +8,8 @@ export default function Dashboard() {
   return (
     <>
    
-      <PrivacyPolicy privacyPolicyData={privacyPolicyData}/>
+      {/* <PrivacyPolicy privacyPolicyData={privacyPolicyData}/> */}
+      <PrivacyPolicy/>
     </>
   );
 }

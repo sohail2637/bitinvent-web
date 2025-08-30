@@ -17,7 +17,7 @@ const FeatureSection = ({
         <section className="flex flex-col lg:flex-row items-center justify-between px-6 md:px-16 py-8 bg-white relative overflow-hidden">
             {/* Text Content */}
             <div
-                className={`w-full md:w-1/2 space-y-6 ${reverse ? 'md:order-2' : ''
+                className={`w-full mb-4 md:w-1/2 space-y-6 ${reverse ? 'md:order-2' : ''
                     }`}
             >
                 <h1 className="text-2xl lg:text-4xl font-medium  text-[#0F1F4B] leading-tight">

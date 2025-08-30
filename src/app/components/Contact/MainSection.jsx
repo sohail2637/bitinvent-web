@@ -235,6 +235,7 @@
 
 import { useState } from "react";
 import HeroSection from "../Common/HeroSection";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function MainSection() {
   const [form, setForm] = useState({
@@ -244,12 +245,15 @@ export default function MainSection() {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false); // ⬅️ Loading state
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // start loading
 
     try {
       const response = await fetch("/api/contact", {
@@ -261,20 +265,22 @@ export default function MainSection() {
       });
 
       if (response.ok) {
-        alert("✅ Thank you for contacting us!");
+        toast.success("Thank you for contacting us!");
         setForm({ name: "", email: "", subject: "", message: "" });
       } else {
-        alert("❌ Failed to send message. Please try again.");
+        toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      alert("❌ Something went wrong.");
+      toast.error("Something went wrong.");
+    } finally {
+      setLoading(false); // stop loading
     }
   };
 
-
   return (
     <div className="bg-white pt-[90px] text-gray-800">
+      <Toaster position="top-right" reverseOrder={false} /> {/* Toast container */}
 
       {/* Hero Section */}
       <HeroSection
@@ -293,7 +299,6 @@ export default function MainSection() {
             <p className="text-gray-600 md:mb-8 mb-4 lg:text-lg text-base leading-5 md:leading-relaxed">
               Whether you&apos;re exploring our services, interested in a free trial, or seeking press details, we&apos;re here to answer any questions you may have.
             </p>
-
 
             <ul className="space-y-6">
               <li className="flex items-center gap-3">
@@ -323,6 +328,7 @@ export default function MainSection() {
           <div className="bg-white shadow-lg border border-gray-100 rounded-2xl lg:p-8 p-3">
             <form onSubmit={handleSubmit} className="space-y-6">
               <h1 className="md:text-3xl text-center text-xl font-bold md:mb-4 mb-0 text-darkGreen">Submit Form</h1>
+              
               {/* Name + Email */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -381,15 +387,17 @@ export default function MainSection() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-darkGreen bg-blue-700 text-white font-medium py-3 rounded-lg shadow-md transition"
+                disabled={loading}
+                className={`w-full ${
+                  loading ? "bg-gray-400 cursor-not-allowed" : "bg-darkGreen bg-blue-800"
+                } text-white font-medium py-3 rounded-lg shadow-md transition`}
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
         </div>
       </section>
     </div>
-
   );
 }

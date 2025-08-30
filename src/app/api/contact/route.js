@@ -13,7 +13,7 @@ export async function POST(req) {
     });
 
     await transporter.sendMail({
-      from: `"Direct to WhatsApp" <${process.env.EMAIL_USER}>`,
+      from: `"BITINVENT"<${process.env.EMAIL_USER}>`,
       to: "byte@bitinvent.org",
       subject: subject || "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,

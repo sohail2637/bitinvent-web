@@ -265,7 +265,7 @@ const AboutUs = () => {
           </motion.section>
 
           {/* Stats Section */}
-          <motion.section
+          {/* <motion.section
             className="md:mt-20 mt-6 md:mb-20 bg-white border border-gray-100 rounded-2xl md:p-12 p-6 shadow-lg"
             initial="hidden"
             whileInView="visible"
@@ -284,7 +284,7 @@ const AboutUs = () => {
                 </motion.div>
               ))}
             </motion.div>
-          </motion.section>
+          </motion.section> */}
         </div>
       </div>
     </>

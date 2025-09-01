@@ -107,10 +107,10 @@ const Home = () => {
           </p>
           <div className="md:text-[20px] text[18px] font-[300] md:leading-7 flex flex-col gap-8 text-[#3a3a3a]">
             <motion.span variants={itemVariants}>
-              BitInvent is a seasoned software and IoT solutions company with five years of experience, boasting a portfolio of over 100 international clients. Renowned for our technical expertise, effective communication, and exceptional project management, we deliver innovative IT solutions at competitive prices. Our agile approach allows us to handle projects of all sizes efficiently.
+              BitInvent is a seasoned software and IoT solutions company with five years of experiences. Renowned for our technical expertise, effective communication, and exceptional project management, we deliver innovative IT solutions at competitive prices. Our agile approach allows us to handle projects of all sizes efficiently.
             </motion.span>
             <motion.span variants={itemVariants}>
-              With an average customer retention rate of five years, our business model blends management and customer care with software development by our team of 70+ engineers based in Faisalabad, Pakistan.
+              With an average customer retention rate of five years, our business model blends management and customer care with software development by our team of 50+ engineers based in Faisalabad, Pakistan.
             </motion.span>
           </div>
 

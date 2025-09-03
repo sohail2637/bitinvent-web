@@ -5,108 +5,76 @@ import HeroSection from '../Common/HeroSection';
 import FeatureSection from '../Common/FeatureSection';
 import ServiceSection from '../Common/ServiceSection';
 import ProcessSection from "../Common/ProcessSection"
+import FeatureCard from "../Common/FeatureCard"
 import WhyChose from "../Common/WhyChose"
 
 export default function CustomSoftwareDevelopment() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <HeroSection
-        title="Personalized Digital Solutions For Your Business"
-        subtitle="Unlock your business's full potential with our Custom Software Development Services. Tailored solutions designed to boost efficiency, streamline processes, and drive growth. "
-        buttonText="Let's Connect"
-        backgroundImage="/assets/images/customSoftware.webp"
+    <div className=" bg-gray-50">
+      <main className="pt-[90px]">
+        <HeroSection
+          title="Custom Digital Solutions for Your Business"
+          subtitle="Boost efficiency, streamline processes, and drive growth with tailored software built around your needs."
+          buttonText="Let's Connect"
+          backgroundImage="/assets/images/customSoftware.png"
+        />
 
-      />
-      <FeatureSection
-        title={
-          <>
-            Revolutionize Your Business with Custom Application Development Services
-          </>
-        }
-        description="BitInvent is a leading custom software development company delivering top-notch custom software development, custom application development, and tailored software solutions. Our team of expert software specialists follows a comprehensive development process to design, build, deploy, and maintain innovative applications and software tailored to the unique needs of specific users and organizations."
-        imageSrc="/assets/images/customSoftware.webp"
-        buttonText="Schedule a Demo"
-        buttonLink="/contact"
-      />
+        <FeatureSection
+          title={
+            <>
+              Revolutionize Your Business with Custom Application Development Services
+            </>
+          }
+          description="BitInvent is a leading custom software development company delivering top-notch custom software development, custom application development, and tailored software solutions. Our team of expert software specialists follows a comprehensive development process to design, build, deploy, and maintain innovative applications and software tailored to the unique needs of specific users and organizations."
+          imageSrc="/assets/images/customSoftware.png"
+          buttonText="Schedule a Demo"
+          buttonLink="/contact"
+        />
 
-      <ServiceSection
-        title="Our Dynamic DevOps Development Services"
-        services={services}
-      />
+        <ServiceSection
+          title="Our Dynamic DevOps Development Services"
+          services={services}
+        />
 
 
-      {/* Features Section */}
-      <div id="features" className="py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="text-center">
-            <p className="lg:text-3xl text-2xl leading-8 font-semibold tracking-tight text-gray-900">
-              Our Custom Application Development Features
-            </p>
-          </div>
-
-          <div className="lg:mt-10 mt-5">
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-4">
-              {features.map((feature) => (
-                <div key={feature.name} className="pt-6 text-center">
-                  <div className="flow-root bg-white rounded-lg px-6 pb-8 shadow-sm hover:shadow-md transition duration-300">
-                    <div className="-mt-6">
-                      <div>
-                        <span className="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-md shadow-lg mx-auto">
-                          <feature.icon className="h-6 w-6 text-indigo-600" aria-hidden="true" />
-                        </span>
-                      </div>
-                      <h3 className="lg:mt-8 mt-4 text-lg font-semiBold text-gray-900 tracking-tight">{feature.name}</h3>
-                      <p className="lg:mt-5 mt-3 text-base text-gray-500">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <ProcessSection
-        title="The Custom Software Development Process"
-        steps={processSteps}
-      />
-      <WhyChose />
-
+        <FeatureCard
+          title="Our Custom Application Development Features"
+          features={features}
+        />
+        <ProcessSection
+          title="The Custom Software Development Process"
+          steps={processSteps}
+        />
+        <WhyChose />
+      </main>
     </div>
   );
 }
 
-const services = [
+const processSteps = [
   {
-    name: 'Enterprise Applications',
-    description: 'Designing and developing software solutions that cater to the specific needs of large organizations, enhancing their operational efficiency and workflow.',
-    icon: <FaCogs className="inline-block" />,
+    step: "1",
+    name: "Planning & Requirements",
+    description:
+      "Understand business goals, analyze requirements, and define project scope with a feasibility check.",
   },
   {
-    name: 'SaaS Applications',
-    description: 'Developing feature-rich SaaS solutions that can be accessed remotely through the internet, offering subscription-based services to users.',
-    icon: <FaGlobe className="inline-block" />,
+    step: "2",
+    name: "Design & Prototyping",
+    description:
+      "Create system architecture, document technical details, and validate UI/UX through prototypes.",
   },
   {
-    name: 'HIPAA Compliant Applications',
-    description: 'Building software that complies with the Health Insurance Portability and Accountability Act (HIPAA), ensuring the security and privacy of medical data.',
-    icon: <FaShieldAlt className="inline-block" />,
+    step: "3",
+    name: "Development & Testing",
+    description:
+      "Build the software following best practices, with thorough unit, integration, and QA testing.",
   },
   {
-    name: 'E-Commerce Applications',
-    description: 'Crafting tailored e-commerce platforms with features like online shopping carts, payment gateways, inventory management, and customer portals.',
-    icon: <FaBoxes className="inline-block" />,
-  },
-  {
-    name: 'Third-Party Applications',
-    description: 'Integrating custom software solutions with third-party applications, systems, and APIs enhances functionality and custom application development that streamlines processes.',
-    icon: <FaExchangeAlt className="inline-block" />,
-  },
-  {
-    name: 'Custom ERP Systems',
-    description: 'Designing Enterprise Resource Planning systems that integrate and manage various business processes like finance, banking, inventory, HR, etc.',
-    icon: <FaChartLine className="inline-block" />,
+    step: "4",
+    name: "Deployment & Maintenance",
+    description:
+      "Release the software, monitor performance, and provide ongoing updates to meet business needs.",
   },
 ];
 
@@ -133,22 +101,35 @@ const features = [
   },
 ];
 
-const processSteps = [
+const services = [
   {
-     step: "1",
-    name: 'Planning and Requirements Gathering',
-    description: 'Initial consultation to understand business goals, followed by requirement analysis to define software features. Project scope is outlined and feasibility study conducted.',
+    name: 'Enterprise Applications',
+    description: 'Designing and developing software solutions that cater to the specific needs of large organizations, enhancing their operational efficiency and workflow.',
+    icon: <FaCogs className="inline-block" />,
   },
-  { step: "2",
-    name: 'Design and Prototyping',
-    description: 'Architects create high-level system architecture detailing component interactions. Detailed design documents specify technical aspects, while prototypes validate UI/UX.',
+  {
+    name: 'SaaS Applications',
+    description: 'Developing feature-rich SaaS solutions that can be accessed remotely through the internet, offering subscription-based services to users.',
+    icon: <FaGlobe className="inline-block" />,
   },
-  { step: "3",
-    name: 'Development and Testing',
-    description: 'Developers create code following design specs and best practices. Rigorous unit and integration testing assure functionality. QA performs comprehensive testing.',
+  {
+    name: 'HIPAA Compliant Applications',
+    description: 'Building software that complies with the Health Insurance Portability and Accountability Act (HIPAA), ensuring the security and privacy of medical data.',
+    icon: <FaShieldAlt className="inline-block" />,
   },
-  { step: "4",
-    name: 'Deployment and Maintenance',
-    description: 'Software is deployed for users with continuous monitoring for performance and security. Regular maintenance and updates align with evolving business needs.',
+  {
+    name: 'E-Commerce Applications',
+    description: 'Crafting tailored e-commerce platforms with features like online shopping carts, payment gateways, inventory management, and customer portals.',
+    icon: <FaBoxes className="inline-block" />,
+  },
+  {
+    name: 'Third-Party Integrations',
+    description: 'Integrating custom software solutions with third-party applications, systems, and APIs to enhance functionality and streamline processes.',
+    icon: <FaExchangeAlt className="inline-block" />,
+  },
+  {
+    name: 'Custom ERP Systems',
+    description: 'Designing Enterprise Resource Planning systems that integrate and manage various business processes like finance, inventory, HR, and more.',
+    icon: <FaChartLine className="inline-block" />,
   },
 ];

@@ -5,6 +5,7 @@ import FeatureSection from '../Common/FeatureSection';
 import ServiceSection from '../Common/ServiceSection';
 import ProcessSection from "../Common/ProcessSection"
 import WhyChose from "../Common/WhyChose"
+import PlatformsSection from "../Common/PlatformsSection"
 
 export default function MobileAppDevelopment() {
   const services = [
@@ -40,25 +41,25 @@ export default function MobileAppDevelopment() {
     }
   ];
 
-  const features = [
+  const platformsData = [
     {
-      title: "User-friendly Interface",
+      name: "User-friendly Interface",
       description: "Our apps ensure a seamless experience with intuitive navigation and swift content access.",
       icon: "👆"
     },
     {
-      title: "Improve Stability",
-      description: "Guaranteeing a crash-free experience that handles many users without slowing down.",
+      name: "High Performance",
+      description: "Guaranteeing a fast, crash-free experience that handles many users without slowing down.",
       icon: "⚡"
     },
     {
-      title: "Resilience",
-      description: "Advanced encryption and security framework to protect user-sensitive information.",
+      name: "Robust Security",
+      description: "Advanced encryption and security frameworks to protect sensitive user information.",
       icon: "🛡️"
     },
     {
-      title: "Socialization",
-      description: "Integration with social platforms for login and content sharing.",
+      name: "Social Integration",
+      description: "Seamless integration with social platforms for easy login and content sharing.",
       icon: "🤝"
     }
   ];
@@ -100,22 +101,22 @@ export default function MobileAppDevelopment() {
     <div className="min-h-screen bg-gray-50">
       <main className="pt-[90px]">
 
-      <HeroSection
-        title="Custom Mobile App Development"
-        subtitle="Turn your business ideas into compelling, user-focused apps with our top-tier Mobile App Developer Services."
-        buttonText="Let's Connect"
-        backgroundImage="/assets/images/mobileApp.webp"
+        <HeroSection
+          title="Custom Mobile App Development"
+          subtitle="Turn your business ideas into compelling, user-focused apps with our top-tier Mobile App Development Services."
+          buttonText="Let's Connect"
+          backgroundImage="/assets/images/mobileApp.jpeg"
 
-      />
-</main>
+        />
+      </main>
       <FeatureSection
         title={
           <>
             Premier mobile app solutions, your top choice
           </>
         }
-        description="BitInvent, a top-tier mobile app development company, delivers cutting-edge custom solutions. We help ambitious businesses to build scalable, user-focused apps that succeed.Our app development team collaborates to create custom features, streamline processes for a better user experience, analyze usage patterns for mobile optimization, and deliver actionable insights to refine your mobile strategy."
-        imageSrc="/assets/images/mobileApp.webp"
+        description="BitInvent, a top-tier mobile app development company, delivers cutting-edge custom solutions. We help ambitious businesses to build scalable, user-focused apps that succeed. Our app development team collaborates to create custom features, streamline processes for a better user experience, analyze usage patterns for mobile optimization, and deliver actionable insights to refine your mobile strategy."
+        imageSrc="/assets/images/mobileApp.jpeg"
         buttonText="Schedule a Demo"
         buttonLink="/contact"
       />
@@ -125,28 +126,13 @@ export default function MobileAppDevelopment() {
         title="Experience the Future of Enterprise Solutions with Our AI Development Services"
         services={services}
       />
+      <PlatformsSection
+        title="Mobile App Development"
+        description="Deliver powerful experiences to your users anywhere. Our cross-platform mobile apps are engineered to perform flawlessly on any device and integrate seamlessly with your business systems."
+        platforms={platformsData}
+      />
 
-
-      {/* Features Section */}
-      <section className="lg:py-16 py-7 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="lg:text-3xl text-2xl font-bold text-center text-gray-800 lg:mb-12 mb-6">
-            Mobile App Development Features
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="border border-gray-200 p-6 rounded-lg hover:border-blue-500 transition">
-                <div className="text-4xl lg:mb-4 mb-2">{feature.icon}</div>
-                <h3 className="text-xl font-semibold lg:mb-3 mb-1 text-gray-800">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Platforms Section */}
+      {/* Platforms Section
       <section className="lg:py-16 py-7 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="lg:text-3xl text-2xl font-bold text-center text-gray-800 lg:mb-6 mb-3">
@@ -165,28 +151,12 @@ export default function MobileAppDevelopment() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Process Section */}
-      <section className="lg:py-16 py-7 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="lg:text-3xl text-2xl font-bold text-center text-gray-800 mb-12">
-            Mobile App Development Service Process
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-lg text-center">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProcessSection
+        title=" Mobile App Development Service Process"
+        steps={processSteps}
+      />
 
 
       <WhyChose />

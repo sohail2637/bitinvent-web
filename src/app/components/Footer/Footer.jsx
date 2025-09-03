@@ -73,8 +73,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#02283a] text-white w-full px-6 py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-        <div className="max-w-screen-lg mx-auto flex flex-col">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="flex flex-col">
           {/* Main content */}
           <div className="md:flex justify-between items-start space-y-8 md:space-y-0">
             {/* About section */}
@@ -83,11 +83,34 @@ const Footer = () => {
               <p className="text-white/90 hover:text-white transition-colors">
                 Transforming ideas into intelligent solutions.
               </p>
-                  <a href="https://www.linkedin.com/company/bitinvent/?viewAsMember=true" className="hover:text-white transition-colors flex items-center">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
-                    </svg>
-                  </a>
+              <div className="flex justify-start flex-row gap-2">
+
+                <a href="https://www.linkedin.com/company/bitinvent/?viewAsMember=true" className="hover:text-white transition-colors flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61579924839704&sk=about"
+                  className="hover:text-white transition-colors flex items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    className="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.018 4.388 11.02 10.125 11.927v-8.437H7.078v-3.49h3.047V9.845c0-3.007 1.793-4.668 4.533-4.668 1.312 0 2.686.236 2.686.236v2.953h-1.513c-1.494 0-1.953.931-1.953 1.887v2.257h3.328l-.532 3.49h-2.796V24c5.737-.907 10.125-5.909 10.125-11.927z"
+                    />
+                  </svg>
+                </a>
+
+              </div>
             </div>
 
             {/* Pakistan address */}
@@ -99,7 +122,11 @@ const Footer = () => {
                 <li>Main Commercial Area,</li>
                 <li>44000 Islamabad, Pakistan</li> */}
                 <li className="font-medium hover:text-white transition-colors">
-                  byte@bitinvent.org
+                  <a
+                    href="mailto:byte@bitinvent.org"
+                  >
+                    byte@bitinvent.org
+                  </a>
                 </li>
                 {/* <li>+92 305 5534249</li> */}
               </ul>
@@ -111,23 +138,23 @@ const Footer = () => {
               <ul className="space-y-2 text-white/90">
                 <li>
                   <a href="aboutUs" className="hover:text-white transition-colors flex items-center">
-                   
+
                     About Us
                   </a>
                 </li>
                 <li>
                   <a href="contact" className="hover:text-white transition-colors flex items-center">
-                   
+
                     Contact Us
                   </a>
                 </li>
                 <li>
                   <a href="portfolio" className="hover:text-white transition-colors flex items-center">
-                    
+
                     Portfolio
                   </a>
                 </li>
-               
+
               </ul>
             </div>
           </div>
@@ -141,7 +168,7 @@ const Footer = () => {
               <a href="/privacy-policy" className="hover:underline hover:text-white/100 transition-colors">
                 Privacy Policy
               </a>
-             
+
             </div>
             <div className="text-sm text-white/80">
               Copyright © BitInvent {new Date().getFullYear()}

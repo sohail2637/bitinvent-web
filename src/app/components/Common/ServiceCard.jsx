@@ -10,11 +10,11 @@ const ServiceCard = ({ service }) => {
           {service.icon}
         </div>
         
-        <h3 className="lg:text-xl text-lg  font-bold lg:mb-3 mb-1 text-gray-800 group-hover:text-purple-700 transition-colors duration-300">
+        <h3 className="lg:text-xl md:text-lg text-base font-bold lg:mb-3 mb-1 text-gray-800 group-hover:text-purple-700 transition-colors duration-300">
           {service.title}
         </h3>
         
-        <p className="text-gray-600 md:text[17px] text-[14px] mb-4">{service.description}</p>
+        <p className="text-gray-600 md:text-base text-sm md:mb-4 mb-2">{service.description}</p>
       </div>
     </div>
   );

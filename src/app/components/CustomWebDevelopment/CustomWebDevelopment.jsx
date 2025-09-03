@@ -6,6 +6,7 @@ import FeatureSection from '../Common/FeatureSection';
 import ServiceSection from '../Common/ServiceSection';
 import ProcessSection from "../Common/ProcessSection"
 import WhyChose from "../Common/WhyChose"
+import FeatureCard from '../Common/FeatureCard';
 
 export default function CustomWebDevelopment() {
   return (
@@ -16,7 +17,7 @@ export default function CustomWebDevelopment() {
           title="Revolutionize Your Online Presence With Custom Web Development"
           subtitle="Unlock your business's full potential with our Custom Web Development Services. Tailored solutions designed to boost efficiency, streamline processes, and drive growth."
           buttonText="Let's Connect"
-          backgroundImage="/assets/images/WebDevelop.webp"
+          backgroundImage="/assets/images/WebDevelop.png"
 
         />
       </main>
@@ -27,7 +28,7 @@ export default function CustomWebDevelopment() {
           </>
         }
         description="BitInvent is a leading web development company specializing in custom web development, custom website development, and bespoke web design services. Our expert team follows a comprehensive development process to design, build, deploy, and maintain tailored websites and applications that meet the unique needs of specific users and organizations."
-        imageSrc="/assets/images/WebDevelop.webp"
+        imageSrc="/assets/images/WebDevelop.png"
         buttonText="Schedule a Demo"
         buttonLink="/contact"
       />
@@ -35,41 +36,10 @@ export default function CustomWebDevelopment() {
         title="Experience the Future of Enterprise Solutions with Our AI Development Services"
         services={services}
       />
-
-      {/* Features Section */}
-      <div id="features" className="lg:py-12 py-5 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="mt-2 lg:text-3xl text-2xl leading-8 font-extrabold tracking-tight text-gray-900">
-              Our Custom Web Development Features
-            </p>
-          </div>
-
-          <div className="lg:mt-10 mt-6">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-              {features.map((feature) => (
-                <div key={feature.name} className="pt-6 text-center">
-                  <div className="flow-root bg-white rounded-lg px-6 pb-8 shadow-sm hover:shadow-md transition duration-300">
-                    <div className="-mt-6">
-                      <div>
-                        <span className="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-md shadow-lg mx-auto">
-                          <feature.icon className="h-6 w-6 text-indigo-600" aria-hidden="true" />
-                        </span>
-                      </div>
-                      <h3 className="lg:mt-8 mt-3 text-lg font-medium text-gray-900 tracking-tight">{feature.name}</h3>
-                      <p className="lg:mt-5 mt-3 text-base text-gray-500">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-
+        <FeatureCard
+          title="Our Custom Web Development Features"
+          features={features}
+        />
 
       <ProcessSection
         title="Our Web Development Process"

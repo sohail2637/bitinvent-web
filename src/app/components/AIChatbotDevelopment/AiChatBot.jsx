@@ -2,6 +2,7 @@ import React from 'react';
 import { FiMessageSquare, FiHeadphones, FiShoppingCart, FiHelpCircle, FiUser, FiGlobe } from 'react-icons/fi';
 
 const ChatbotTypes = () => {
+
   const chatbotTypes = [
     {
       icon: <FiMessageSquare className="text-blue-500" />,
@@ -36,14 +37,14 @@ const ChatbotTypes = () => {
   ];
 
   return (
-    <section className="md:py-20 py-12 bg-gradient-to-b from-[#fdfbff] to-white">
-      <div className="container mx-auto px-6">
+    <section className="md:py-12 py-6 bg-gradient-to-b from-[#fdfbff] to-white">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center md:mb-16 mb-4">
         
-          <h2 className="lg:text-4xl text-2xl font-bold text-gray-900 lg:mb-4 mb-0">
-            Smart AI Chatbots for Your Business
+          <h2 className="lg:text-2xl px-2 text-xl font-semibold  text-gray-900 lg:mb-4 mb-0">
+            Smart AI Chatbots for Your Business 
           </h2>
-          <p className="md:text-xl text-lg  text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="md:text-lg hidden md:block  text-base  text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Transform customer interactions with our AI-powered virtual assistants, built using cutting-edge NLP and machine learning technologies.
           </p>
         </div>
@@ -52,23 +53,17 @@ const ChatbotTypes = () => {
           {chatbotTypes.map((type, index) => (
             <div 
               key={index} 
-              className="bg-white md:p-8 p-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className="bg-white md:p-6 p-3 flex flex-col rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
-              <div className="text-5xl lg:mb-6 mb-3 p-4 bg-blue-50 rounded-full w-14 h-14 lg:w-20 lg:h-20 flex items-center justify-center">
+              <div className="text-3xl lg:mb-6 mb-3 p-4 bg-blue-50 rounded-full  lg:h-14 lg:w-14 h-14 w-14 flex items-center justify-center">
                 {type.icon}
               </div>
-              <h3 className="md:text-2xl text-xl  font-bold lg:mb-4 mb-2 text-gray-800">{type.name}</h3>
-              <p className="text-gray-600  mb-6">{type.description}</p>
+              <h3 className="lg:text-xl text-lg font-bold lg:mb-3 mb-1 text-gray-800">{type.name}</h3>
+              <p className="text-gray-600 md:text-base text-sm  md:mb-4 mb-2">{type.description}</p>
             
             </div>
           ))}
         </div>
-
-        {/* <div className="text-center mt-16">
-          <button  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
-            Get Your Custom Chatbot
-          </button>
-        </div> */}
       </div>
     </section>
   );

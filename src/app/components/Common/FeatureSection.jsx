@@ -14,16 +14,17 @@ const FeatureSection = ({
     buttonTextColor = 'text-blue-600'
 }) => {
     return (
-        <section className="flex flex-col lg:flex-row items-center justify-between px-6 md:px-16 py-8 bg-white relative overflow-hidden">
+          <div className="relative overflow-hidden px-6 md:py-7 py-4  ">
+        <section className='max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between ' >
             {/* Text Content */}
             <div
-                className={`w-full mb-4 md:w-1/2 space-y-6 ${reverse ? 'md:order-2' : ''
+                className={`w-full mb-4 md:space-y-6 ${reverse ? 'md:order-2' : ''
                     }`}
             >
-                <h1 className="text-2xl lg:text-4xl font-medium  text-[#0F1F4B] leading-tight">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold  text-[#0F1F4B] leading-tight">
                     {title}
                 </h1>
-                <p className="text-gray-600 text-lg font-normal leading-relaxed">{description}</p>
+                <p className="text-gray-600 text-base md:mb-4 my-2">{description}</p>
 
                 <a
                     href={buttonLink}
@@ -35,7 +36,7 @@ const FeatureSection = ({
 
             {/* Image */}
             <div
-                className={`w-full md:w-1/2 relative flex justify-center mt-12 md:mt-0 ${reverse ? 'md:order-1' : ''
+                className={`w-full md:w-1/2 relative flex justify-center mt-3 md:mt-0 ${reverse ? 'md:order-1' : ''
                     }`}
             >
                 <div className="relative z-10">
@@ -49,6 +50,7 @@ const FeatureSection = ({
                 </div>
             </div>
         </section>
+             </div>
     );
 };
 

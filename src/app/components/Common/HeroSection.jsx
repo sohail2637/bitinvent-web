@@ -23,7 +23,7 @@ const HeroSection = ({
     >
       <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
 
-      <div className="relative z-10 flex items-center container md:min-h-screen mx-auto px-5  md:px-8 py-16  md:py-24">
+      <div className="relative z-10 flex items-center max-w-7xl md:min-h-screen mx-auto px-5  md:px-8 py-16  md:py-24">
         <div className="max-w-xl">
           <h1 className="text-3xl md:text-5xl font-medium mb-2 md::mb-4">
             {title}

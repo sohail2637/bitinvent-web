@@ -10,14 +10,14 @@ const CaseStudyPortfolio = () => {
             title: "Aver-Store",
             description:
                 "An e-commerce platform specialized in selling premium fabrics online.",
-            image: "/assets/images/avera-store.webp",
+            image: "/assets/images/avera-store.png",
         },
         {
             id: 2,
             title: "AverCollection",
             description:
                 "A management system designed for shop owners to streamline inventory, sales, and customer management.",
-            image: "/assets/images/avera.webp",
+            image: "/assets/images/avera.png",
         },
         {
             id: 3,
@@ -31,14 +31,14 @@ const CaseStudyPortfolio = () => {
             title: "BIT.EU",
             description:
                 "Crypto platform offering professional trading, earning rewards, and instant conversion for 300+ cryptocurrencies.",
-            image: "/assets/images/home_trad_tab.webp",
+            image: "/assets/images/home_trad_tab.png",
         },
         {
             id: 5,
             title: "Lapfarm",
             description:
                 "A blog website where users can read and write about plants and animals with an integrated AI chatbot.",
-            image: "/assets/images/lapfarm.jpg",
+            image: "/assets/images/lapfarm.webp",
         },
         {
             id: 6,

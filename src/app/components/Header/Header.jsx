@@ -217,7 +217,7 @@ const Header = () => {
     <>
       <header className={`fixed w-full top-0 h-[90px] z-50 bg-white transition-all duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between px-4 lg:px-8"
+          className="mx-auto flex max-w-7xl pr-5 items-center justify-between"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">

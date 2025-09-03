@@ -89,7 +89,7 @@ const AboutUs = () => {
 
         <div className="container mx-auto px-6 lg:px-20 md:py-20 py-6">
           {/* Our Story */}
-          <motion.section
+          <section
             className="md:mb-28 mb-6"
             initial="hidden"
             whileInView="visible"
@@ -97,13 +97,13 @@ const AboutUs = () => {
             variants={containerVariants}
           >
 
-            <motion.div variants={itemVariants}>
+            <div variants={itemVariants}>
               <div className="flex items-center mb-6">
                 <div className="h-px w-12 bg-blue-500 mr-4"></div>
                 <span className="text-blue-600 font-medium">OUR BEGINNINGS</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-serif font-bold md:mb-6 mb-3 text-gray-900 leading-7 md:leading-tight">
-                Crafting digital excellence since 2019
+                Crafting digital excellence since 2023
               </h2>
               <p className="md:text-[20px] text[18px] md:leading-7 md:mb-6 mb-3 text-gray-600 leading-relaxed">
                 Founded in Faisalabad, Pakistan, BitInvent began as a passionate
@@ -116,11 +116,11 @@ const AboutUs = () => {
                 engineers who bridge the gap between ambitious ideas and exceptional
                 digital experiences.
               </p>
-            </motion.div>
-          </motion.section>
+            </div>
+          </section>
 
           {/* Our Mission */}
-          <motion.section
+          <section
             className="md:mb-28 mb-6"
             initial="hidden"
             whileInView="visible"
@@ -146,23 +146,23 @@ const AboutUs = () => {
                 their audiences and achieve their most ambitious goals.&quot;
               </p>
             </motion.div>
-          </motion.section>
+          </section>
 
           {/* Our Values */}
-          <motion.section
+          <section
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={containerVariants}
           >
-            <motion.div className="text-center md:mb-16 mb-6" variants={itemVariants}>
+            <div className="text-center md:mb-16 mb-6" variants={itemVariants}>
               <span className="text-blue-600 font-medium">OUR FOUNDATION</span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mt-2 text-gray-900 leading-tight">
                 Principles that guide our work
               </h2>
-            </motion.div>
+            </div>
 
-            <motion.div
+            <div
               className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
               variants={containerVariants}
             >
@@ -256,13 +256,13 @@ const AboutUs = () => {
                 >
                   <div className="flex justify-center gap-3 md:gap-5 items-start flex-row text-blue-600 mb-2">
                     <p>{value.icon}</p>
-                  <h3 className="text-xl font-bold lg:mb-4 mb-0 text-gray-900">{value.title}</h3>
-                    </div>
+                    <h3 className="text-xl font-bold lg:mb-4 mb-0 text-gray-900">{value.title}</h3>
+                  </div>
                   <p className="text-gray-600">{value.desc}</p>
                 </motion.div>
               ))}
-            </motion.div>
-          </motion.section>
+            </div>
+          </section>
 
           {/* Stats Section */}
           {/* <motion.section

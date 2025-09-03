@@ -4,6 +4,8 @@ import ServiceSection from '../Common/ServiceSection';
 import ProcessSection from "../Common/ProcessSection"
 import WhyChose from "../Common/WhyChose"
 import ChatbotTypes from "./AiChatBot"
+import PlatformsSection from "../Common/PlatformsSection"
+
 
 export default function AIChatbotDevelopment() {
   const services = [
@@ -39,7 +41,7 @@ export default function AIChatbotDevelopment() {
     }
   ];
 
-  const chatbotTypes = [
+  const platformsData = [
     { name: "AI Chatbot Engineering", icon: "🧠", description: "Designing advanced AI chatbots using machine learning and neural networks." },
     { name: "AI Voice Assistant Chatbots", icon: "🎙️", description: "Virtual assistants with speech recognition for hands-free interactions." },
     { name: "Medical AI Chatbots", icon: "🏥", description: "Chatbots for clinical workflows and remote consultations." },
@@ -96,7 +98,7 @@ export default function AIChatbotDevelopment() {
         description="As the Chatbot market grows, more businesses are realizing the benefits of using chatbots. The ease of automation and AI-powered customer service solutions has led to a surge in chatbot use across industries. Whether in e-commerce or customer service, our chatbots automate tasks, offer real-time support, and create personalized experiences. Maintain a competitive edge in the digital landscape with our adaptable, smart, and ready-to-deploy conversational chatbot solutions."
         buttonText="Schedule a Demo"
         buttonLink="/contact"
-         imageSrc="/assets/images/ai-chatbot.png"
+        imageSrc="/assets/images/ai-chatbot.png"
 
       />
 
@@ -108,68 +110,18 @@ export default function AIChatbotDevelopment() {
 
       <ChatbotTypes />
 
+     <PlatformsSection
+      title="Integrate Our Chatbots into Different Platforms"
+      description="No matter where your customers are, our AI chatbots can meet their needs. We've designed our AI chatbots to work seamlessly with a wide range of platforms."
+      platforms={platformsData}
+    />
 
-      {/* Platform Integration Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="lg:text-4xl text-2xl font-bold text-center text-gray-800 mb-3 lg:mb-6">
-            Integrate Our Chatbots into Different Platforms
-          </h2>
-          <p className="lg:text-xl text-base text-center text-gray-600 lg:mb-12 mb-4 max-w-4xl mx-auto">
-            No matter where your customers are, our AI chatbots can meet their needs. We&apos;ve designed our AI chatbots to work seamlessly with a wide range of platforms.
-          </p>
+      <ProcessSection
+        title=" Our Chatbot Development Process"
+        steps={processSteps}
+      />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {platforms.map((platform, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-500 transition">
-                <div className="text-3xl mb-3">{platform.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">{platform.name}</h3>
-                <p className="text-gray-600">Our chatbots integrate seamlessly with {platform.name.toLowerCase()} to enhance user experience.</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-      {/* Benefits Section */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            How Does BitInvent Benefit Your Business?
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="border border-gray-200 p-6 rounded-lg hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Process Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Our Chatbot Development Process
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-sm text-center">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  
 
 
 

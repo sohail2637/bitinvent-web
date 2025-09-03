@@ -16,7 +16,7 @@ export default function DevOps() {
         title="Revolutionize Your Business.With Our DevOps Solutions"
         subtitle="Streamline your development lifecycle with our AI-powered DevOps services. Accelerate delivery, enhance collaboration, and achieve operational excellence."
         buttonText="Let's Connect"
-        backgroundImage="/assets/images/devops.webp"
+        backgroundImage="/assets/images/devops.png"
 
       />
       </main>
@@ -136,22 +136,30 @@ const features = [
 const processSteps = [
   {
     step: "1",
-    name: 'Plan and Develop',
-    description: 'Project goals are defined, and requirements are gathered. Developers then follow coding standards to write code based on these requirements, utilizing Git for version control and collaboration.',
+    name: "Plan and Develop",
+    description:
+      "Define project goals, gather requirements, and build solutions following coding standards with Git for collaboration.",
   },
-  {step: "2",
-    name: 'Continuous Integration and Delivery (CI/CD)',
-    description: 'Continuous Integration (CI) streamlines development by automating code integration and testing with each commit. Continuous Delivery (CD) automates staging, testing, and production deployment.',
+  {
+    step: "2",
+    name: "CI/CD",
+    description:
+      "Automate code integration, testing, and deployment to ensure faster and more reliable delivery.",
   },
-  {step: "3",
-    name: 'Monitor and Security',
-    description: 'Ongoing monitoring ensures application and infrastructure performance is continuously observed. Security practices include regular scans and timely patch applications for robust protection.',
+  {
+    step: "3",
+    name: "Monitor and Secure",
+    description:
+      "Continuously track performance and apply security best practices through scans and timely updates.",
   },
-  {step: "4",
-    name: 'Optimize and Improve',
-    description: 'For optimal performance, monitoring and scaling resources as required is vital. Collecting feedback and embracing automation drive continuous process improvement.',
+  {
+    step: "4",
+    name: "Optimize and Improve",
+    description:
+      "Scale resources, gather feedback, and use automation to enhance efficiency and performance.",
   },
 ];
+
 
 const reasons = [
   {

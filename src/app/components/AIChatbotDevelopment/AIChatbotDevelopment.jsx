@@ -47,7 +47,7 @@ export default function AIChatbotDevelopment() {
     { name: "Medical AI Chatbots", icon: "🏥", description: "Chatbots for clinical workflows and remote consultations." },
     { name: "Legal Chatbots", icon: "⚖️", description: "AI assistants for law firms handling client interactions and legal research." },
     { name: "Social Media Chatbot", icon: "📱", description: "Chatbots that engage customers across social media platforms." },
-    { name: "Vision-based Chatbots", icon: "👁️", description: "Chatbots that analyze visual inputs for enhanced understanding." }
+    { name: "Vision-based Chatbots", icon: "👁️", description: "Our chatbots integrate seamlessly with vision-based chatbots to enhance user experience." }
   ];
 
   const platforms = [

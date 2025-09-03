@@ -48,18 +48,18 @@ export default function MobileAppDevelopment() {
       icon: "👆"
     },
     {
-      name: "Improve Stability",
-      description: "Guaranteeing a crash-free experience that handles many users without slowing down.",
+      name: "High Performance",
+      description: "Guaranteeing a fast, crash-free experience that handles many users without slowing down.",
       icon: "⚡"
     },
     {
-      name: "Resilience",
-      description: "Advanced encryption and security framework to protect user-sensitive information.",
+      name: "Robust Security",
+      description: "Advanced encryption and security frameworks to protect sensitive user information.",
       icon: "🛡️"
     },
     {
-      name: "Socialization",
-      description: "Integration with social platforms for login and content sharing.",
+      name: "Social Integration",
+      description: "Seamless integration with social platforms for easy login and content sharing.",
       icon: "🤝"
     }
   ];
@@ -103,7 +103,7 @@ export default function MobileAppDevelopment() {
 
         <HeroSection
           title="Custom Mobile App Development"
-          subtitle="Turn your business ideas into compelling, user-focused apps with our top-tier Mobile App Developer Services."
+          subtitle="Turn your business ideas into compelling, user-focused apps with our top-tier Mobile App Development Services."
           buttonText="Let's Connect"
           backgroundImage="/assets/images/mobileApp.jpeg"
 
@@ -115,7 +115,7 @@ export default function MobileAppDevelopment() {
             Premier mobile app solutions, your top choice
           </>
         }
-        description="BitInvent, a top-tier mobile app development company, delivers cutting-edge custom solutions. We help ambitious businesses to build scalable, user-focused apps that succeed.Our app development team collaborates to create custom features, streamline processes for a better user experience, analyze usage patterns for mobile optimization, and deliver actionable insights to refine your mobile strategy."
+        description="BitInvent, a top-tier mobile app development company, delivers cutting-edge custom solutions. We help ambitious businesses to build scalable, user-focused apps that succeed. Our app development team collaborates to create custom features, streamline processes for a better user experience, analyze usage patterns for mobile optimization, and deliver actionable insights to refine your mobile strategy."
         imageSrc="/assets/images/mobileApp.jpeg"
         buttonText="Schedule a Demo"
         buttonLink="/contact"
@@ -128,7 +128,7 @@ export default function MobileAppDevelopment() {
       />
       <PlatformsSection
         title="Mobile App Development"
-      description="No matter where your customers are, our AI chatbots can meet their needs. We've designed our AI chatbots to work seamlessly with a wide range of platforms."
+        description="Deliver powerful experiences to your users anywhere. Our cross-platform mobile apps are engineered to perform flawlessly on any device and integrate seamlessly with your business systems."
         platforms={platformsData}
       />
 

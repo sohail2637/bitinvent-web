@@ -12,62 +12,57 @@ const services = [
   {
     icon: <FaRobot className="inline-block" />,
     title: "Chatbot Development",
-    description: "For websites, applications, and messaging platforms, Chat GPT offers chatbot development services with natural language interactions that give users assistance and support."
+    description: "Deploy advanced chatbots for websites, applications, and messaging platforms. They provide intuitive assistance and support through natural language interactions."
   },
   {
     icon: <FaQuestion className="inline-block" />,
     title: "Question Answering Module",
-    description: "We integrate a powerful question-answering capability into your chatbot, enabling it to provide accurate and relevant answers to user queries."
+    description: "Integrate a powerful capability that delivers accurate and relevant answers to user queries in real-time."
   },
   {
     icon: <FaPenAlt className="inline-block" />,
     title: "Content Generation",
-    description: "Our Chat GPT integration service offers content generation. It empowers your website with engaging and personalized written materials."
+    description: "Empower your platform with engaging, personalized written content created by our AI integration services."
   },
   {
     icon: <FaGlobe className="inline-block" />,
     title: "Language Translation",
-    description: "We integrate natural language processing capabilities with Chat GPT to offer seamless translation services for users in different countries or regions."
+    description: "Break down language barriers with seamless translation services powered by natural language processing, making your app accessible to a global audience."
   },
   {
     icon: <FaGem className="inline-block" />,
     title: "Personalized Recommendations",
-    description: "Experience the power of personalized recommendations with ChatGPT integrations. It is tailored to enhance user experiences and drive conversions."
+    description: "Boost user engagement and conversions with AI-driven recommendations tailored to individual user preferences and behaviors."
   },
   {
     icon: <FaTools className="inline-block" />,
     title: "Prompt Engineering",
-    description: "This service involves creating compelling prompts. These prompts enable the language model to generate high-quality responses that meet user needs and expectations."
+    description: "We craft compelling and effective prompts to ensure the language model generates high-quality, relevant responses that meet your specific business needs."
   }
 ];
 
 export default function ChatGPTIntegrationPage() {
   return (
-    <div className="bg-gray-50 text-gray-800 min-h-screen">
+    <div className="bg-gray-50 text-gray-80 min-h-screen">
       <main className="pt-[90px]">
         <HeroSection
-          title="Seamless Communication with Chat GPT Integrations"
-          subtitle="At BitInvent, we strive to provide top-notch AI services. Our specialty is smooth communication via Chat GPT Integration Services, enhancing user engagement and driving conversions across industries like health tech."
+          title="Seamless Communication with ChatGPT Integration Services"
+          subtitle="At BitInvent, we provide top-notch AI development services designed to transform user engagement and drive conversions. Our specialty is creating seamless communication channels through cutting-edge ChatGPT integrations, tailored for industries like health tech and beyond."
           buttonText="Let's Connect"
           backgroundImage="/assets/images/chatgpt-img.jpg"
-
         />
       </main>
+
       <FeatureSection
-        title={
-          <>
-            Premier mobile app solutions, your top choice
-          </>
-        }
-        description="BitInvent, a top-tier mobile app development company, delivers cutting-edge custom solutions. We help ambitious businesses to build scalable, user-focused apps that succeed.Our app development team collaborates to create custom features, streamline processes for a better user experience, analyze usage patterns for mobile optimization, and deliver actionable insights to refine your mobile strategy."
+        title="Experience the Future of Enterprise Solutions"
+        description="As a premier mobile app development company, BitInvent empowers ambitious businesses with scalable, user-focused applications. Our team collaborates with you to build custom features, streamline processes, and analyze usage patterns to deliver actionable insights and a superior user experience."
         imageSrc="/assets/images/chatgpt-img.jpg"
         buttonText="Schedule a Demo"
         buttonLink="/contact"
       />
 
-
       <ServiceSection
-        title="Experience the Future of Enterprise Solutions with Our AI Development Services"
+        title="Our ChatGPT Integration Services"
         services={services}
       />
 
@@ -75,4 +70,3 @@ export default function ChatGPTIntegrationPage() {
     </div>
   );
 }
-

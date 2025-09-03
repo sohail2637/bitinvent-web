@@ -51,36 +51,30 @@ export default function CustomSoftwareDevelopment() {
   );
 }
 
-const services = [
+const processSteps = [
   {
-    name: 'Enterprise Applications',
-    description: 'Designing and developing software solutions that cater to the specific needs of large organizations, enhancing their operational efficiency and workflow.',
-    icon: <FaCogs className="inline-block" />,
+    step: "1",
+    name: "Planning & Requirements",
+    description:
+      "Understand business goals, analyze requirements, and define project scope with a feasibility check.",
   },
   {
-    name: 'SaaS Applications',
-    description: 'Developing feature-rich SaaS solutions that can be accessed remotely through the internet, offering subscription-based services to users.',
-    icon: <FaGlobe className="inline-block" />,
+    step: "2",
+    name: "Design & Prototyping",
+    description:
+      "Create system architecture, document technical details, and validate UI/UX through prototypes.",
   },
   {
-    name: 'HIPAA Compliant Applications',
-    description: 'Building software that complies with the Health Insurance Portability and Accountability Act (HIPAA), ensuring the security and privacy of medical data.',
-    icon: <FaShieldAlt className="inline-block" />,
+    step: "3",
+    name: "Development & Testing",
+    description:
+      "Build the software following best practices, with thorough unit, integration, and QA testing.",
   },
   {
-    name: 'E-Commerce Applications',
-    description: 'Crafting tailored e-commerce platforms with features like online shopping carts, payment gateways, inventory management, and customer portals.',
-    icon: <FaBoxes className="inline-block" />,
-  },
-  {
-    name: 'Third-Party Applications',
-    description: 'Integrating custom software solutions with third-party applications, systems, and APIs enhances functionality and custom application development that streamlines processes.',
-    icon: <FaExchangeAlt className="inline-block" />,
-  },
-  {
-    name: 'Custom ERP Systems',
-    description: 'Designing Enterprise Resource Planning systems that integrate and manage various business processes like finance, banking, inventory, HR, etc.',
-    icon: <FaChartLine className="inline-block" />,
+    step: "4",
+    name: "Deployment & Maintenance",
+    description:
+      "Release the software, monitor performance, and provide ongoing updates to meet business needs.",
   },
 ];
 
@@ -107,29 +101,35 @@ const features = [
   },
 ];
 
-const processSteps = [
+const services = [
   {
-    step: "1",
-    name: "Planning & Requirements",
-    description:
-      "Understand business goals, analyze requirements, and define project scope with a feasibility check.",
+    name: 'Enterprise Applications',
+    description: 'Designing and developing software solutions that cater to the specific needs of large organizations, enhancing their operational efficiency and workflow.',
+    icon: <FaCogs className="inline-block" />,
   },
   {
-    step: "2",
-    name: "Design & Prototyping",
-    description:
-      "Create system architecture, document technical details, and validate UI/UX through prototypes.",
+    name: 'SaaS Applications',
+    description: 'Developing feature-rich SaaS solutions that can be accessed remotely through the internet, offering subscription-based services to users.',
+    icon: <FaGlobe className="inline-block" />,
   },
   {
-    step: "3",
-    name: "Development & Testing",
-    description:
-      "Build the software following best practices, with thorough unit, integration, and QA testing.",
+    name: 'HIPAA Compliant Applications',
+    description: 'Building software that complies with the Health Insurance Portability and Accountability Act (HIPAA), ensuring the security and privacy of medical data.',
+    icon: <FaShieldAlt className="inline-block" />,
   },
   {
-    step: "4",
-    name: "Deployment & Maintenance",
-    description:
-      "Release the software, monitor performance, and provide ongoing updates to meet business needs.",
+    name: 'E-Commerce Applications',
+    description: 'Crafting tailored e-commerce platforms with features like online shopping carts, payment gateways, inventory management, and customer portals.',
+    icon: <FaBoxes className="inline-block" />,
+  },
+  {
+    name: 'Third-Party Integrations',
+    description: 'Integrating custom software solutions with third-party applications, systems, and APIs to enhance functionality and streamline processes.',
+    icon: <FaExchangeAlt className="inline-block" />,
+  },
+  {
+    name: 'Custom ERP Systems',
+    description: 'Designing Enterprise Resource Planning systems that integrate and manage various business processes like finance, inventory, HR, and more.',
+    icon: <FaChartLine className="inline-block" />,
   },
 ];

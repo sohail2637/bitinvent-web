@@ -1,14 +1,17 @@
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home({ industries }) {
   const [hoverIndex, setHoverIndex] = useState(0);
+  const router = useRouter();
 
-  const currentBg = industries[hoverIndex]?.bgImage || "/assets/images/HealthCare.png";
+  const currentBg =
+    industries[hoverIndex]?.bgImage || "/assets/images/HealthCare.png";
 
   return (
     <main className="bg-gray-900">
       <section
-        className="relative w-full md:h-screen  bg-cover bg-center transition-all duration-700 ease-in-out"
+        className="relative w-full md:h-screen bg-cover bg-center transition-all duration-700 ease-in-out"
         style={{
           backgroundImage: `url(${currentBg})`,
         }}
@@ -17,8 +20,9 @@ export default function Home({ industries }) {
           {industries.map((item, idx) => (
             <div
               key={idx}
-              className="relative border border-white/30 flex items-center justify-center p-6 cursor-pointer h-64 md:h-full" 
+              className="relative border border-white/30 flex items-center justify-center p-6 cursor-pointer h-64 md:h-full"
               onMouseEnter={() => setHoverIndex(idx)}
+              onClick={() => router.push(`/industry/${item.slug}`)}
             >
               {hoverIndex !== idx && (
                 <h2 className="text-white font-semibold text-lg md:text-xl text-center">

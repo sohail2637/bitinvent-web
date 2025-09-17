@@ -2,41 +2,49 @@ import IndustryCard from "./IndustryCard"
 
 export const industries = [
   {
+    slug:"healthcare",
     title: "Healthcare",
     description: "Transforming patient care with AI-powered diagnostics and personalized treatment.",
     bgImage: "/assets/images/HealthCare.png",
   },
   {
+    slug:"ecommerce",
     title: "E-commerce & Retail",
     description: "Driving sales and customer engagement with personalized shopping experiences.",
     bgImage: "/assets/images/ecommerce.png",
   },
   {
+    slug:"elearning",
     title: "Education & E-learning",
     description: "Enhancing learning through interactive digital platforms and AI-driven insights.",
     bgImage: "/assets/images/eLearning.png",
   },
   {
+    slug:"finance",
     title: "Finance",
     description: "Revolutionizing financial services with secure, fast, and data-driven solutions.",
     bgImage: "/assets/images/finance.png",
   },
   {
+    slug:"real-estate",
     title: "Real Estate",
     description: "Empowering property management and sales with virtual tours and smart analytics.",
     bgImage: "/assets/images/realState.png",
   },
   {
+    slug:"travel-hospitality",
     title: "Travel & Hospitality",
     description: "Elevating guest experiences with AI-driven booking, personalization, and service.",
     bgImage: "/assets/images/travel.png",
   },
   {
+    slug:"logistics",
     title: "Logistics & Supply Chain",
     description: "Optimizing operations with real-time tracking and predictive analytics.",
     bgImage: "/assets/images/supply.png",
   },
   {
+    slug:"legal-compliance",
     title: "Legal & Compliance",
     description: "Streamlining compliance and legal processes with AI-powered document analysis.",
     bgImage: "/assets/images/legal.png",

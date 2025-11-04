@@ -72,83 +72,110 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#02283a] text-white w-full px-6 py-9">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-20 flex flex-col">
-        <div className="md:flex flex-col flex-wrap justify-between items-center max-w-screen-lg mr-auto ml-auto ">
-         
+    <footer className="bg-[#02283a] text-white w-full px-6 py-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="flex flex-col">
+          {/* Main content */}
+          <div className="md:flex justify-between items-start space-y-8 md:space-y-0">
+            {/* About section */}
+            <div className="md:w-1/4 space-y-4">
+              <h3 className="text-lg font-semibold tracking-wider">BITINVENT</h3>
+              <p className="text-white/90 hover:text-white transition-colors">
+                Transforming ideas into intelligent solutions.
+              </p>
+              <div className="flex justify-start flex-row gap-2">
 
-          <div className="md:flex justify-around items-start ">
-            <div className="w-[50%] lg:w-[25.22%] mb-6 sm:mb-0 text-left leading-7 md:p-8">
-              <ul className="">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:underline text-[16px] font-[300] leading-6 text-white "
+                <a href="https://www.linkedin.com/company/bitinvent/?viewAsMember=true" className="hover:text-white transition-colors flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61579924839704&sk=about"
+                  className="hover:text-white transition-colors flex items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    className="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
-                    MEMBER OF
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.018 4.388 11.02 10.125 11.927v-8.437H7.078v-3.49h3.047V9.845c0-3.007 1.793-4.668 4.533-4.668 1.312 0 2.686.236 2.686.236v2.953h-1.513c-1.494 0-1.953.931-1.953 1.887v2.257h3.328l-.532 3.49h-2.796V24c5.737-.907 10.125-5.909 10.125-11.927z"
+                    />
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+
+            {/* Pakistan address */}
+            <div className="md:w-1/4 space-y-4">
+              <h3 className="text-lg font-semibold tracking-wider">PAKISTAN</h3>
+              <ul className="space-y-2 text-white/90">
+                <li>BitInvent</li>
+                <li>Office #2, Ground Floor,Sitara Techno Park, Faisalabad</li>
+                {/* <li>Sitara Techno Park, Faisalabad</li> */}
+                <li className="font-medium hover:text-white transition-colors">
+                  <a
+                    href="mailto:byte@bitinvent.org"
+                  >
+                    byte@bitinvent.org
+                  </a>
+                </li>
+                {/* <li>+92 305 5534249</li> */}
+              </ul>
+            </div>
+
+            {/* Social media links */}
+            <div className="md:w-1/4 space-y-4">
+              <h3 className="text-lg font-semibold tracking-wider">Quick Links</h3>
+              <ul className="space-y-2 text-white/90">
+                <li>
+                  <a href="aboutUs" className="hover:text-white transition-colors flex items-center">
+
+                    About Us
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:underline text-[16px] font-[400] leading-6 text-white"
-                  >
-                    {" "}
-                    DI – Dansk Industri Innovere Group Pasha
+                  <a href="contact" className="hover:text-white transition-colors flex items-center">
+
+                    Contact Us
                   </a>
                 </li>
-             
-              </ul>
-            </div>
+                <li>
+                  <a href="portfolio" className="hover:text-white transition-colors flex items-center">
 
-            <div className="mt-10 md:mt-0 leading-7">
-            
-              <ul role="list" className="mt-6 ">
-              <li className="text-[17px] font-[300]  text-white">
-              BitInvent A/S
+                    Portfolio
+                  </a>
                 </li>
-                <li className="text-[17px] font-[300]  text-white">
-                  Njalsgade 76,
-                </li>
-                <li className="text-[17px] font-[300]  text-white">
-                   2300 KBH S, Denmark
-                </li>
-                <li className="text-[17px] font-[400]  text-white">
-                  info@bitInvent.dk
-                </li>
-                <li className="text-[17px] font-[300]  text-white">
-                +92 305 5534249
-                </li>
-                <li className="text-[17px] font-[300]  text-white">
-                  CVR 2924 0442
-                </li>
-              </ul>
-            </div>
 
-            <div className="w-full sm:w-1/2 lg:w-[25.22%] mb-6 sm:mb-0 text-left">
-              <ul
-                role="list"
-                className="mt-6  text-[17px] font-[300] leading-6 text-white"
-              >
-                <li>BitInvent (Pvt.) Ltd.</li>
-                <li>Hassan Arcade, F-11 Markaz, 33000 Faisalabad,</li>
-                <li> Pakistan</li>
-                <li>A subsidiary of bitInvent Denmark</li>
               </ul>
             </div>
           </div>
-<div className="flex items-center justify-center pt-28 ">
-<div className="w-full mb-6 sm:mb-0 ">
-            <a href="/privacy-policy " className="text-[17px]">Privacy Policy  |</a>
-            <a href="#" className="text-[17px]">Cookie Policy  | </a>
-            <a href="#" className="text-[17px]"> Copyright © bitInvent A/S 2023</a>
+
+          {/* Divider */}
+          <div className="border-t border-white/20 my-8"></div>
+
+          {/* Bottom links */}
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex items-center space-x-4 text-sm">
+              <a href="/privacy-policy" className="hover:underline hover:text-white/100 transition-colors">
+                Privacy Policy
+              </a>
+
+            </div>
+            <div className="text-sm text-white/80">
+              Copyright © BitInvent {new Date().getFullYear()}
+            </div>
           </div>
-</div>
-          
         </div>
       </div>
     </footer>
   );
 };
-
 export default Footer;

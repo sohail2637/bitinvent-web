@@ -21,7 +21,7 @@ export default function OurServices() {
               width={800}
               height={450}
               layout='responsive'
-
+alt='tech'
             >
             </Image>
           </div>

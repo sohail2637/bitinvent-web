@@ -8,7 +8,7 @@ export default function TechStack() {
   
             <section>
                 <div
-                    className="md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[520px] h-[250px]   w-screen flex justify-between
+                    className="md:bg-cover md:bg-center bg-contain bg-no-repeat md:h-[520px] h-[250px]  flex justify-between
                      items-end "
                     style={{ backgroundImage: "url('/assets/images/Tech-stack.jpg')" }}
                 >

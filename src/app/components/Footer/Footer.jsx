@@ -118,9 +118,8 @@ const Footer = () => {
               <h3 className="text-lg font-semibold tracking-wider">PAKISTAN</h3>
               <ul className="space-y-2 text-white/90">
                 <li>BitInvent</li>
-                {/* <li>123 Business Plaza,</li>
-                <li>Main Commercial Area,</li>
-                <li>44000 Islamabad, Pakistan</li> */}
+                <li>Office #2, Ground Floor,Sitara Techno Park, Faisalabad</li>
+                {/* <li>Sitara Techno Park, Faisalabad</li> */}
                 <li className="font-medium hover:text-white transition-colors">
                   <a
                     href="mailto:byte@bitinvent.org"
